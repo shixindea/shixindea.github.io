@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="luckyzmj 计算机 网络安全 渗透测试">
+    <meta name="keywords" content="git 命令, luckyzmj 计算机 网络安全 渗透测试">
     <meta name="description" content="本科 | 计算机科学与技术 | 网络安全">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Guoguoの博客</title>
+    <title>git 命令 | Guoguoの博客</title>
 
     <link rel="icon" type="image/jpeg" href="https://5fou.com/i/2022/05/20/p3fx7s.jpg">
 
@@ -512,12 +512,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928014621.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">git 命令</h1>
                 </div>
             </div>
         </div>
@@ -636,12 +636,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/git/">
+                                <span class="chip bg-color">git</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/" class="post-category">
+                                前端篇
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -657,14 +670,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-06-13
+                    2022-05-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    5
+                    416
                 </div>
                 
 
@@ -689,7 +702,104 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                google-site-verification: google110e5e5e14c8dcf0.html
+                <hr>
+<h2 id="abbrlink-‘0’"><a href="#abbrlink-‘0’" class="headerlink" title="abbrlink: ‘0’"></a>abbrlink: ‘0’</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js">#初始化仓库
+git init
+
+#提交文件到暂存区
+git add <span class="token operator">&lt;</span>file<span class="token operator">&gt;</span>
+
+#放弃提交文件并撤销修改
+git restore <span class="token operator">&lt;</span>file<span class="token operator">&gt;</span>
+
+#暂存区文件上传到仓库
+git commit <span class="token operator">-</span>m <span class="token string">"&lt;说明&gt;"</span>
+
+#查看仓库状态
+git status
+
+#查看版本日志
+git log
+#查看操作日志
+git reflog
+
+#回退版本
+git reset <span class="token operator">--</span>hard <span class="token constant">HEAD</span><span class="token operator">^</span> #回退上一个版本
+git reset <span class="token operator">--</span>hard <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span> #回退指定的版本
+
+#查看分支
+git branch
+#创建分支
+git branch <span class="token operator">&lt;</span>分支<span class="token operator">&gt;</span>
+#删除分支
+git branch <span class="token operator">-</span>d <span class="token operator">&lt;</span>分支<span class="token operator">&gt;</span>
+
+#切换分支
+git <span class="token keyword">switch</span> <span class="token operator">&lt;</span>分支<span class="token operator">&gt;</span>
+git checkout <span class="token operator">&lt;</span>分支<span class="token operator">&gt;</span>
+#合并分支
+git merge <span class="token operator">&lt;</span>分支<span class="token operator">&gt;</span>
+
+
+#添加远程仓库
+git remote add <span class="token operator">&lt;</span>origin<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>仓库地址<span class="token operator">&gt;</span>
+
+#修改远程仓库
+git remote set<span class="token operator">-</span>url origin url
+
+#查看远程仓库列表
+git remote <span class="token operator">-</span>v
+
+#克隆远程仓库
+git clone <span class="token operator">&lt;</span>仓库地址<span class="token operator">&gt;</span>
+#上传文件到远程仓库
+git push <span class="token operator">-</span>u <span class="token operator">&lt;</span>origin<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>master<span class="token operator">&gt;</span>
+ <span class="token operator">-</span>f 强制上传
+#初始化仓库
+git init
+
+#连接远程仓库
+git remote add origin <span class="token punctuation">[</span>url<span class="token punctuation">]</span>
+
+#克隆仓库
+git clone <span class="token punctuation">[</span>url<span class="token punctuation">]</span>
+
+#配置用户名
+git config <span class="token operator">--</span>global user<span class="token punctuation">.</span>name <span class="token string">"[name]"</span>
+
+#配置邮箱地址
+git config <span class="token operator">--</span>global user<span class="token punctuation">.</span>email <span class="token string">"[email address]"</span>
+
+#创建新分支
+git branch <span class="token punctuation">[</span>branch_name<span class="token punctuation">]</span>
+
+#切换分支并更新工作目录
+git <span class="token keyword">switch</span> <span class="token operator">-</span>c <span class="token punctuation">[</span>branch_name<span class="token punctuation">]</span>
+
+#将指定分支合并到当前分支
+git merge <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>
+
+#删除指定分支
+git branch <span class="token operator">-</span>d <span class="token punctuation">[</span>branch_name<span class="token punctuation">]</span>
+
+#查看当前分支版本历史
+git log
+
+#查看文件的版本历史
+git log <span class="token operator">--</span>follow <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
+
+#查看分支的内容差异
+git diff <span class="token punctuation">[</span>first_branch<span class="token punctuation">]</span><span class="token operator">...</span><span class="token punctuation">[</span>second_branch<span class="token punctuation">]</span>
+
+#输出指定commit的元数据和内容变化
+git show <span class="token punctuation">[</span>commit<span class="token punctuation">]</span>
+
+#添加文件到暂存区
+git add <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
+
+#提交暂存区文件到仓库
+git commit <span class="token operator">-</span>m <span class="token string">"[descriptive message]"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
                 
             </div>
             <hr/>
@@ -715,7 +825,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://shixindea.github.io/google1xxxxxxx0.html">https://shixindea.github.io/google1xxxxxxx0.html</a>
+                    <a href="https://shixindea.github.io/posts/4b3510a6.html">https://shixindea.github.io/posts/4b3510a6.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -752,7 +862,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/git/">
+                                    <span class="chip bg-color">git</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1222,39 +1336,49 @@ new Valine({
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/google1xxxxxxx0.html">
+                <a href="/posts/d74d8b79.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg" class="responsive-img" alt="">
+                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928015238.jpg" class="responsive-img" alt="git 提交">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">git 提交</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            从本机上传到github、码云等git类仓库的命令流程
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-20
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-20
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Guoguo
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/" class="post-category">
+                                    前端篇
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/git/">
+                        <span class="chip bg-color">git</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1262,37 +1386,52 @@ new Valine({
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/google1xxxxxxx0.html">
+                <a href="/posts/d74d8b76.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg" class="responsive-img" alt="">
+                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928013834.jpg" class="responsive-img" alt="LuckyBlog开源搭建教程">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">LuckyBlog开源搭建教程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            之前在B站上发布了个人博客的视频，播放量也破千了，有网友私聊也想要搭建一个这样的博客。经过一段时间的准备，现将博客LuckyBlog的源代码公布出来，大家只需要根据以下的步骤，即可快速搭建一个漂亮且完善的博客。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-17
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Guoguo
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/" class="post-category">
+                                    博客篇
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hexo-blog-lucky/">
+                        <span class="chip bg-color">hexo-blog-lucky</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/">
+                        <span class="chip bg-color">博客搭建教程</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>

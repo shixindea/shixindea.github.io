@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="luckyzmj 计算机 网络安全 渗透测试">
+    <meta name="keywords" content="git 提交, luckyzmj 计算机 网络安全 渗透测试">
     <meta name="description" content="本科 | 计算机科学与技术 | 网络安全">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Guoguoの博客</title>
+    <title>git 提交 | Guoguoの博客</title>
 
     <link rel="icon" type="image/jpeg" href="https://5fou.com/i/2022/05/20/p3fx7s.jpg">
 
@@ -272,7 +272,8 @@
 			归档
 			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
 		</a>
-            <ul  style="background:  ;" >
+            <!-- <ul  style="background:  ;" > -->
+            <ul>
               
                 <li>
 
@@ -327,7 +328,8 @@
 			清单
 			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
 		</a>
-            <ul  style="background:  ;" >
+            <!-- <ul  style="background:  ;" > -->
+            <ul>
               
                 <li>
 
@@ -510,12 +512,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928015238.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">git 提交</h1>
                 </div>
             </div>
         </div>
@@ -634,12 +636,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/git/">
+                                <span class="chip bg-color">git</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/" class="post-category">
+                                前端篇
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -662,7 +677,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    243
+                    245
                 </div>
                 
 
@@ -687,17 +702,18 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>准备工作：  需要下载git软件    需要码云注册账号</p>
-<p>git 可以把我们的本地网站提交上传到远程仓库（码云 gitee）里面    类似以前的   ftp  </p>
-<p>码云  就是远程仓库， 类似服务器 </p>
+                <hr>
+<h2 id="abbrlink-‘0’"><a href="#abbrlink-‘0’" class="headerlink" title="abbrlink: ‘0’"></a>abbrlink: ‘0’</h2><p>准备工作： 需要下载 git 软件 需要码云注册账号</p>
+<p>git 可以把我们的本地网站提交上传到远程仓库（码云 gitee）里面 类似以前的 ftp</p>
+<p>码云 就是远程仓库， 类似服务器</p>
 <ol>
-<li><p>码云创建新的仓库。   heimamm  </p>
+<li><p>码云创建新的仓库。 heimamm</p>
 </li>
-<li><p>利用git 提交 把本地网站提交到 码云新建的仓库里面</p>
+<li><p>利用 git 提交 把本地网站提交到 码云新建的仓库里面</p>
 <ul>
 <li><p>在网站根目录右键– Git Bash Here</p>
 </li>
-<li><p>如果是第一次利用git提交，请配置好全局选项</p>
+<li><p>如果是第一次利用 git 提交，请配置好全局选项</p>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">git config <span class="token operator">--</span>global user<span class="token punctuation">.</span>name <span class="token string">"用户名"</span>
 git config <span class="token operator">--</span>global user<span class="token punctuation">.</span>email <span class="token string">"你的邮箱地址"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 </li>
@@ -716,12 +732,11 @@ git config <span class="token operator">--</span>global user<span class="token p
 <li><p>把本地仓库的文件推送到远程仓库 push</p>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">git push <span class="token operator">-</span>u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
-<li><p>切换 主分支 到master</p>
+<li><p>切换 主分支 到 master</p>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">git checkout master<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
 <li><p>查看当前分支</p>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">git branch<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 </li>
 </ul>
 </li>
@@ -752,7 +767,7 @@ git config <span class="token operator">--</span>global user<span class="token p
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://shixindea.github.io/posts/0.html">https://shixindea.github.io/posts/0.html</a>
+                    <a href="https://shixindea.github.io/posts/d74d8b79.html">https://shixindea.github.io/posts/d74d8b79.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -789,7 +804,11 @@ git config <span class="token operator">--</span>global user<span class="token p
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/git/">
+                                    <span class="chip bg-color">git</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1263,13 +1282,13 @@ new Valine({
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/0.html">
+                <a href="/posts/4a17b156.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg" class="responsive-img" alt="">
+                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928020704.jpg" class="responsive-img" alt="hexo主题下载">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">hexo主题下载</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1284,11 +1303,23 @@ new Valine({
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Guoguo
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/" class="post-category">
+                                    博客篇
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hexo%E4%B8%BB%E9%A2%98/">
+                        <span class="chip bg-color">hexo主题</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1300,19 +1331,19 @@ new Valine({
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/4a17b157.html">
+                <a href="/posts/4b3510a6.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021038.jpg" class="responsive-img" alt="首页归档清单">
+                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928014621.jpg" class="responsive-img" alt="git 命令">
                         
-                        <span class="card-title">首页归档清单</span>
+                        <span class="card-title">git 命令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            这里主要介绍了git的命令集合，供访问者快速熟悉并使用markdown文档
                         
                     </div>
                     <div class="publish-info">
@@ -1321,8 +1352,12 @@ new Valine({
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Guoguo
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/" class="post-category">
+                                    前端篇
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -1330,8 +1365,8 @@ new Valine({
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
+                    <a href="/tags/git/">
+                        <span class="chip bg-color">git</span>
                     </a>
                     
                 </div>
