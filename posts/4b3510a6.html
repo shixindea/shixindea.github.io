@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="git 命令, luckyzmj 计算机 网络安全 渗透测试">
-    <meta name="description" content="本科 | 计算机科学与技术 | 网络安全">
+    <meta name="keywords" content="git 命令, shixindea 计算机 Blog web前端">
+    <meta name="description" content="本科 | 信息工程学院 | 教育技术学">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -243,7 +243,7 @@
         <div class="logo-name">Guoguoの博客</div>
         <div class="logo-desc">
             
-            本科 | 计算机科学与技术 | 网络安全
+            本科 | 信息工程学院 | 教育技术学
             
         </div>
     </div>
@@ -999,10 +999,10 @@ git commit <span class="token operator">-</span>m <span class="token string">"[d
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="/null" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="https://5fou.com/i/2022/05/23/owx05y.png" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/null" class="reward-img" alt="微信打赏二维码">
+                        <img src="https://5fou.com/i/2022/05/23/owwxrm.png" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -1019,6 +1019,33 @@ git commit <span class="token operator">-</span>m <span class="token string">"[d
             
         </div>
     </div>
+
+    
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '36f79c02f9fadf62c6ef',
+        clientSecret: '31aa8d374a6ca19d15108b0cac5d7b8af1ce778b',
+        repo: 'shixindea.github.io',
+        owner: 'shixindea',
+        admin: ["shixindea"],
+        id: '2022-05-20T00-00-00',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
 
     
 
@@ -1345,72 +1372,24 @@ new Valine({
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/d74d8b79.html">
+                <a href="/posts/e3e08109.html">
                     <div class="card-image">
                         
-                        <img src="/medias/banner/10.jpg" class="responsive-img" alt="git 提交">
+                        <img src="/medias/banner/6.jpg" class="responsive-img" alt="果锅的博客搭建">
                         
-                        <span class="card-title">git 提交</span>
+                        <span class="card-title">果锅的博客搭建</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            从本机上传到github、码云等git类仓库的命令流程
+                            这是我的第一个hexo主题，从现在开始我准备搭建一个属于自己的基于hexo的blog，希望大家可以给予支持。
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-20
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-23
                         </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/" class="post-category">
-                                    前端篇
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/git/">
-                        <span class="chip bg-color">git</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/posts/17fd92ae.html">
-                    <div class="card-image">
-                        
-                        <img src="/medias/banner/7.jpg" class="responsive-img" alt="Hexo之渲染绕过">
-                        
-                        <span class="card-title">Hexo之渲染绕过</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            在Hexo部署时会默认渲染source下的所有html页面，但有时候想在Hexo博客上单独自定义html页面或README.md时，却不希望被Hexo渲染。
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-28
-                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1430,8 +1409,60 @@ new Valine({
                         <span class="chip bg-color">Hexo</span>
                     </a>
                     
-                    <a href="/tags/%E6%B8%B2%E6%9F%93%E7%BB%95%E8%BF%87/">
-                        <span class="chip bg-color">渲染绕过</span>
+                    <a href="/tags/Github/">
+                        <span class="chip bg-color">Github</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                        <span class="chip bg-color">博客</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/posts/d74d8b79.html">
+                    <div class="card-image">
+                        
+                        <img src="/medias/banner/10.jpg" class="responsive-img" alt="git 提交">
+                        
+                        <span class="card-title">git 提交</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            从本机上传到github、码云等git类仓库的命令流程
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-20
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/" class="post-category">
+                                    前端篇
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/git/">
+                        <span class="chip bg-color">git</span>
                     </a>
                     
                 </div>
@@ -1765,7 +1796,7 @@ new Valine({
 
 
 
-    <a href="袁果锅" class="tooltipped" target="_blank" data-tooltip="关注我的微博: 袁果锅" data-position="top" data-delay="50">
+    <a href="https://weibo.com/袁果锅" class="tooltipped" target="_blank" data-tooltip="关注我的微博: https://weibo.com/袁果锅" data-position="top" data-delay="50">
         <i class="fab fa-weibo"></i>
     </a>
 
@@ -1992,6 +2023,10 @@ $(function () {
     </script>
     
 
+	
+	    <div style="position:fixed;bottom:125px;right:9px;cursor: pointer;">
+	        <a title="兔小巢" target="_blank" rel="noopener" href="https://support.qq.com/products/"><img src="/medias/contact.png"></a>
+	    </div>
 	
     
 

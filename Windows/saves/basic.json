@@ -220,7 +220,7 @@
             "desc": "个人博客",
             "icon": {
                 "type": "img",
-                "content": "https://s1.ax1x.com/2020/05/17/YR20js.jpg",
+                "content": "https://5fou.com/i/2022/05/23/hhxlv3.jpg",
                 "bg": "#6b96cf"
             },
             "openMode": "normal",
@@ -241,7 +241,7 @@
                 "width": "x*0.8"
             },
             "title": "个人博客",
-            "url": "http://www.luckyzmj.cn",
+            "url": "https://github.com/shixindea/",
             "customTile": "",
             "urlRandomToken": true
         },
@@ -340,7 +340,7 @@
                 "width": "x*0.8"
             },
             "title": "码云仓库",
-            "url": "https://gitee.com:/yuri2/ylui",
+            "url": "https://gitee.com/xindezi",
             "customTile": "",
             "urlRandomToken": true
         },
@@ -373,7 +373,7 @@
                 "width": "x*0.8"
             },
             "title": "github",
-            "url": "https://github.com:/yuri2peter/ylui",
+            "url": "https://github.com/shixindea/",
             "customTile": "",
             "urlRandomToken": false
         },
@@ -669,8 +669,8 @@
                 "height": "y*0.8-80",
                 "width": "x*0.8"
             },
-            "title": "GoogleHacking",
-            "url": "http://luckyzmj.cn/GoogleHacking/",
+            "title": "Google",
+            "url": "https://www.google.com/",
             "customTile": "",
             "urlRandomToken": true
         },
