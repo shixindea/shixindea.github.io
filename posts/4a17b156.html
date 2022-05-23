@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="git 命令, luckyzmj 计算机 网络安全 渗透测试">
+    <meta name="keywords" content="hexo主题下载, luckyzmj 计算机 网络安全 渗透测试">
     <meta name="description" content="本科 | 计算机科学与技术 | 网络安全">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>git 命令 | Guoguoの博客</title>
+    <title>hexo主题下载 | Guoguoの博客</title>
 
     <link rel="icon" type="image/jpeg" href="https://5fou.com/i/2022/05/20/p3fx7s.jpg">
 
@@ -512,12 +512,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/banner/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/banner/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">git 命令</h1>
+                    <h1 class="description center-align post-title">hexo主题下载</h1>
                 </div>
             </div>
         </div>
@@ -638,8 +638,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/git/">
-                                <span class="chip bg-color">git</span>
+                            <a href="/tags/hexo%E4%B8%BB%E9%A2%98/">
+                                <span class="chip bg-color">hexo主题</span>
                             </a>
                         
                     </div>
@@ -650,8 +650,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/" class="post-category">
-                                前端篇
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/" class="post-category">
+                                博客篇
                             </a>
                         
                     </div>
@@ -663,21 +663,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-05-20
+                    2022-05-23
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-05-23
+                    2022-05-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    417
+                    351
                 </div>
                 
 
@@ -707,103 +707,40 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <hr>
-<h2 id="Git-命令"><a href="#Git-命令" class="headerlink" title="Git 命令"></a>Git 命令</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js">#初始化仓库
-git init
+                <p>这里主要介绍了 hexo 应该怎么下载，并使用他人的主题，亲测可用。</p>
+<h1 id="hexo-主题下载"><a href="#hexo-主题下载" class="headerlink" title="hexo 主题下载"></a>hexo 主题下载</h1><h2 id="1-安装-git"><a href="#1-安装-git" class="headerlink" title="1. 安装 git"></a>1. 安装 git</h2><blockquote>
+<p>下载地址： [git 官网](<a target="_blank" rel="noopener" href="https://git-scm.com/">Git (git-scm.com)</a> )</p>
+</blockquote>
+<h2 id="2-安装-node-js"><a href="#2-安装-node-js" class="headerlink" title="2. 安装 node.js"></a>2. 安装 node.js</h2><blockquote>
+<p>下载地址：[node.js 官网](<a target="_blank" rel="noopener" href="http://nodejs.cn/download/">下载 | Node.js 中文网 (nodejs.cn)</a> )</p>
+</blockquote>
+<h2 id="3-安装-Hexo"><a href="#3-安装-Hexo" class="headerlink" title="3. 安装 Hexo"></a>3. 安装 Hexo</h2><p>打开命令提示符，键盘 <code>win+R </code>调出<code>命令提示符</code> 执行以下命令</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-#提交文件到暂存区
-git add <span class="token operator">&lt;</span>file<span class="token operator">&gt;</span>
+<p>安装完成后执行 <code>hexo -v</code> 验证是否安装成功</p>
+<h2 id="4-项目初始化"><a href="#4-项目初始化" class="headerlink" title="4. 项目初始化"></a>4. 项目初始化</h2><p>输入<code>hexo init</code> 初始化文件夹</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-#放弃提交文件并撤销修改
-git restore <span class="token operator">&lt;</span>file<span class="token operator">&gt;</span>
+<p>新建完成后，指定文件夹<code>MyBlog</code>目录下有：</p>
+<ul>
+<li><code>node_modules</code>: 依赖包</li>
+<li><code>public</code>：存放生成的页面</li>
+<li><code>scaffolds</code>：生成文章的一些模板</li>
+<li><code>source</code>：用来存放你的文章</li>
+<li><code>themes</code>：主题**</li>
+<li><code>_config.yml</code>: 博客的配置文件**</li>
+</ul>
+<p>到此为止，本地的 Hexo 基础环境搭建完成了。</p>
+<h2 id="5-安装-LuckyBlog"><a href="#5-安装-LuckyBlog" class="headerlink" title="5. 安装 LuckyBlog"></a>5. 安装 LuckyBlog</h2><p>下载源代码到本地文件下</p>
+<blockquote>
+<p>执行 github 中 主题的命令 ，以下面这个为例</p>
+</blockquote>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/LuckyZmj/LuckyBlog.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-#暂存区文件上传到仓库
-git commit <span class="token operator">-</span>m <span class="token string">"&lt;说明&gt;"</span>
-
-#查看仓库状态
-git status
-
-#查看版本日志
-git log
-#查看操作日志
-git reflog
-
-#回退版本
-git reset <span class="token operator">--</span>hard <span class="token constant">HEAD</span><span class="token operator">^</span> #回退上一个版本
-git reset <span class="token operator">--</span>hard <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span> #回退指定的版本
-
-#查看分支
-git branch
-#创建分支
-git branch <span class="token operator">&lt;</span>分支<span class="token operator">&gt;</span>
-#删除分支
-git branch <span class="token operator">-</span>d <span class="token operator">&lt;</span>分支<span class="token operator">&gt;</span>
-
-#切换分支
-git <span class="token keyword">switch</span> <span class="token operator">&lt;</span>分支<span class="token operator">&gt;</span>
-git checkout <span class="token operator">&lt;</span>分支<span class="token operator">&gt;</span>
-#合并分支
-git merge <span class="token operator">&lt;</span>分支<span class="token operator">&gt;</span>
-
-
-#添加远程仓库
-git remote add <span class="token operator">&lt;</span>origin<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>仓库地址<span class="token operator">&gt;</span>
-
-#修改远程仓库
-git remote set<span class="token operator">-</span>url origin url
-
-#查看远程仓库列表
-git remote <span class="token operator">-</span>v
-
-#克隆远程仓库
-git clone <span class="token operator">&lt;</span>仓库地址<span class="token operator">&gt;</span>
-#上传文件到远程仓库
-git push <span class="token operator">-</span>u <span class="token operator">&lt;</span>origin<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>master<span class="token operator">&gt;</span>
- <span class="token operator">-</span>f 强制上传
-#初始化仓库
-git init
-
-#连接远程仓库
-git remote add origin <span class="token punctuation">[</span>url<span class="token punctuation">]</span>
-
-#克隆仓库
-git clone <span class="token punctuation">[</span>url<span class="token punctuation">]</span>
-
-#配置用户名
-git config <span class="token operator">--</span>global user<span class="token punctuation">.</span>name <span class="token string">"[name]"</span>
-
-#配置邮箱地址
-git config <span class="token operator">--</span>global user<span class="token punctuation">.</span>email <span class="token string">"[email address]"</span>
-
-#创建新分支
-git branch <span class="token punctuation">[</span>branch_name<span class="token punctuation">]</span>
-
-#切换分支并更新工作目录
-git <span class="token keyword">switch</span> <span class="token operator">-</span>c <span class="token punctuation">[</span>branch_name<span class="token punctuation">]</span>
-
-#将指定分支合并到当前分支
-git merge <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>
-
-#删除指定分支
-git branch <span class="token operator">-</span>d <span class="token punctuation">[</span>branch_name<span class="token punctuation">]</span>
-
-#查看当前分支版本历史
-git log
-
-#查看文件的版本历史
-git log <span class="token operator">--</span>follow <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
-
-#查看分支的内容差异
-git diff <span class="token punctuation">[</span>first_branch<span class="token punctuation">]</span><span class="token operator">...</span><span class="token punctuation">[</span>second_branch<span class="token punctuation">]</span>
-
-#输出指定commit的元数据和内容变化
-git show <span class="token punctuation">[</span>commit<span class="token punctuation">]</span>
-
-#添加文件到暂存区
-git add <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
-
-#提交暂存区文件到仓库
-git commit <span class="token operator">-</span>m <span class="token string">"[descriptive message]"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>将下载好的<code>LuckyBlog</code>全部复制到<code>MyBlog</code>目录下，如果复制过程中出现重复文件，点击替换。 <img src="https://camo.githubusercontent.com/72c36f091bb866ad6e14f62d70531cbc14165b1bcaef3aa6089102bb92a16558/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f4c75636b795a6d6a2f696d67626564406d61737465722f706f7374732f32303231303531383230323635372e706e67" alt="img"></p>
+<p>最后使用 &nbsp;<code>npm i</code>&nbsp; 或者 &nbsp;<code>npm install</code>&nbsp; 安装依赖环境包即可。</p>
+<p>最后执行 &nbsp;<code>hexo clean</code>&nbsp; 和 &nbsp;<code>hexo s -g</code>&nbsp; 启动 Hexo 本地预览，即可看到效果。</p>
+<p>到此为止 LuckyBlog 安装完成，接下来就是个性化设置了。</p>
 
                 
             </div>
@@ -830,7 +767,7 @@ git commit <span class="token operator">-</span>m <span class="token string">"[d
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://shixindea.github.io/posts/4b3510a6.html">https://shixindea.github.io/posts/4b3510a6.html</a>
+                    <a href="https://shixindea.github.io/posts/4a17b156.html">https://shixindea.github.io/posts/4a17b156.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -868,8 +805,8 @@ git commit <span class="token operator">-</span>m <span class="token string">"[d
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/git/">
-                                    <span class="chip bg-color">git</span>
+                                <a href="/tags/hexo%E4%B8%BB%E9%A2%98/">
+                                    <span class="chip bg-color">hexo主题</span>
                                 </a>
                             
                         </div>
@@ -1341,9 +1278,59 @@ new Valine({
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/posts/4a17b156.html">
+                    <div class="card-image">
+                        
+                        <img src="/medias/banner/7.jpg" class="responsive-img" alt="hexo主题下载">
+                        
+                        <span class="card-title">hexo主题下载</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-23
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/" class="post-category">
+                                    博客篇
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hexo%E4%B8%BB%E9%A2%98/">
+                        <span class="chip bg-color">hexo主题</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/posts/e3e08109.html">
                     <div class="card-image">
@@ -1360,9 +1347,9 @@ new Valine({
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-23
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-23
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1388,54 +1375,6 @@ new Valine({
                     
                     <a href="/tags/%E5%8D%9A%E5%AE%A2/">
                         <span class="chip bg-color">博客</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/posts/d74d8b79.html">
-                    <div class="card-image">
-                        
-                        <img src="/medias/banner/10.jpg" class="responsive-img" alt="git 提交">
-                        
-                        <span class="card-title">git 提交</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            从本机上传到github、码云等git类仓库的命令流程
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-20
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/" class="post-category">
-                                    前端篇
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/git/">
-                        <span class="chip bg-color">git</span>
                     </a>
                     
                 </div>
