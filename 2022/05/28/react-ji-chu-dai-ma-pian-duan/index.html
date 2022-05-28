@@ -681,7 +681,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    142
+                    216
                 </div>
                 
 
@@ -742,6 +742,31 @@ const h1 =(
 
 ReactDOM.render(h1,document.querySelector('#root'))
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="3-更改变量值"><a href="#3-更改变量值" class="headerlink" title="3. 更改变量值"></a>3. 更改变量值</h2><pre class="line-numbers language-react" data-language="react"><code class="language-react">import React from "react";
+import {  createRoot}  from 'react-dom/client';
+
+const container = document.querySelector('#root');
+const root = createRoot(container);
+
+class Hello extends React.Component{
+  state = {
+    count:0
+  }
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;h1&gt;计数器：{this.state.count}&lt;/h1&gt;
+        &lt;button onClick={() =&gt; {
+          this.setState({
+            count: this.state.count + 1
+          })
+        }}&gt;+1&lt;/button&gt;
+    &lt;/div&gt;
+    )
+  }
+}
+root.render(&lt;Hello /&gt;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
                 
@@ -1599,7 +1624,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">9k</span>&nbsp;字
+                class="white-color">9.6k</span>&nbsp;字
             
             
             
