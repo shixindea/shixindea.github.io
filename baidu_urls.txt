@@ -1,8 +1,8 @@
-https://shixindea.github.io/posts/0.html
-https://shixindea.github.io/posts/0.html
-https://shixindea.github.io/posts/0.html
-https://shixindea.github.io/posts/4a17b156.html
-https://shixindea.github.io/posts/e3e08109.html
-https://shixindea.github.io/posts/4b3510a6.html
-https://shixindea.github.io/posts/d74d8b79.html
-https://shixindea.github.io/posts/17fd92ae.html
+https://shixindea.github.io/2022/05/28/react-chang-jian-cuo-wu/
+https://shixindea.github.io/2022/05/28/react-bi-ji/
+https://shixindea.github.io/2022/05/27/react-ji-chu-dai-ma-pian-duan/
+https://shixindea.github.io/2022/05/23/hexo-zhu-ti-an-zhuang-jiao-cheng/
+https://shixindea.github.io/2022/05/23/blog/
+https://shixindea.github.io/2022/05/20/git-ming-ling/
+https://shixindea.github.io/2022/05/20/git-ti-jiao/
+https://shixindea.github.io/2020/04/28/hexo-xr/
