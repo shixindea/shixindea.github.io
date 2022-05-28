@@ -681,14 +681,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    641
+                    988
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    5 分
                 </div>
                 
 
@@ -861,6 +861,94 @@ class Hello extends React.Component{
   }
 }
 root.render(&lt;Hello /&gt;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="5-发表评论案例"><a href="#5-发表评论案例" class="headerlink" title="5.发表评论案例"></a>5.发表评论案例</h2><blockquote>
+<p>这是一个评论的案例。</p>
+<p>利用了<code>按需显示</code>、 <code>数组添加</code>、<code>方法调用</code>、<code>重置状态</code>、<code>Input双向绑定</code></p>
+</blockquote>
+<pre class="line-numbers language-react" data-language="react"><code class="language-react">import React from "react";
+import { createRoot } from 'react-dom/client';
+const container = document.querySelector('#root');
+const root = createRoot(container);
+
+class App extends React.Component {
+  state = {
+    comments: [
+      // { id: 1, name: 'jack', content: '啥方法' },
+      // { id: 2, name: 'rose', content: '啥方法222' },
+      // { id: 3, name: 'tom', content: '啥方法33' },
+    ],
+    // 评论人
+    username: "",
+    // 评论内容
+    userContent: ""
+  }
+
+  // 渲染评论列表
+  renderList() {
+    if (this.state.comments.length === 0)
+      return &lt;div&gt;暂无评论快去评论&lt;/div&gt;
+
+    return (
+      &lt;ul&gt;
+        {
+          this.state.comments.map(item =&gt; (
+            &lt;li key={item.id}&gt;
+              &lt;h3&gt;评论人：{item.name}&lt;/h3&gt;
+              &lt;p&gt;评论内容：{item.content}&lt;/p&gt;
+            &lt;/li&gt;
+          ))
+        }
+      &lt;/ul&gt;
+    )
+  }
+
+  handleForm = e =&gt; {
+    const { name, value } = e.target
+    this.setState({
+      [name]: value
+    })
+  }
+  // 发表评论
+  addComment = () =&gt; {
+    const { comments, username, userContent } = this.state
+    if (username.trim() === "" || userContent.trim() === "") {
+      alert('请输入评论人和评论内容')
+      return
+    }
+    const newComments = [{
+      id: comments.length + 1,
+      name: username,
+      content: userContent
+    }, ...comments]
+
+
+    // console.log(newComments);
+
+    // 清空文本框的值，要清空文本框只需要清空对应的state清空即可
+    this.setState({
+      comments: newComments,
+      username: "",
+      userContent: ""
+    })
+
+  }
+
+  render() {
+    const { username, userContent } = this.state
+    return (
+      &lt;div className="app"&gt;
+        &lt;div&gt;
+          &lt;input type="text" placeholder="请输入评论人" value={username} name="username" onChange={this.handleForm} /&gt; &lt;br /&gt;
+          &lt;textarea placeholder="请输入评论内容" value={userContent} name="userContent" onChange={this.handleForm} &gt;&lt;/textarea&gt;&lt;br /&gt;
+          &lt;button onClick={this.addComment}&gt;发表&lt;/button&gt;
+        &lt;/div&gt;
+        {this.renderList()}
+      &lt;/div&gt;
+    )
+  }
+}
+root.render(&lt;App /&gt;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
@@ -1730,7 +1818,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">10.6k</span>&nbsp;字
+                class="white-color">11k</span>&nbsp;字
             
             
             
