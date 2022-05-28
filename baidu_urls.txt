@@ -1,6 +1,6 @@
 https://shixindea.github.io/2022/05/28/react-chang-jian-cuo-wu/
 https://shixindea.github.io/2022/05/28/react-bi-ji/
-https://shixindea.github.io/2022/05/27/react-ji-chu-dai-ma-pian-duan/
+https://shixindea.github.io/2022/05/28/react-ji-chu-dai-ma-pian-duan/
 https://shixindea.github.io/2022/05/23/hexo-zhu-ti-an-zhuang-jiao-cheng/
 https://shixindea.github.io/2022/05/23/blog/
 https://shixindea.github.io/2022/05/20/git-ming-ling/

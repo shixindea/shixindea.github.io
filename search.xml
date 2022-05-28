@@ -31,12 +31,26 @@
     
     <entry>
       <title></title>
-      <link href="2022/05/27/react-ji-chu-dai-ma-pian-duan/"/>
-      <url>2022/05/27/react-ji-chu-dai-ma-pian-duan/</url>
+      <link href="2022/05/28/react-ji-chu-dai-ma-pian-duan/"/>
+      <url>2022/05/28/react-ji-chu-dai-ma-pian-duan/</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="React基础代码片段"><a href="#React基础代码片段" class="headerlink" title="React基础代码片段"></a>React基础代码片段</h1><h2 id="1-列表渲染"><a href="#1-列表渲染" class="headerlink" title="1. 列表渲染"></a>1. 列表渲染</h2><pre class="line-numbers language-react" data-language="react"><code class="language-react">// 导入文件import React from "react";import ReactDOM  from "react-dom";const songs = [  { id: 1, name: '痴心绝对' },  {id:2,name:'666'},  { id: 3, name: '南山南' },]const list =(   &lt; ul &gt;    {songs.map(item =&gt; &lt;li key={item.id}&gt;{item.name}&lt;/li&gt;  ) }  &lt;/ul &gt;)const title = &lt;h1&gt;{list}&lt;/h1&gt;ReactDOM.render(title,document.querySelector('#root'))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="2-行内样式和className调用样式"><a href="#2-行内样式和className调用样式" class="headerlink" title="2. 行内样式和className调用样式"></a>2. 行内样式和className调用样式</h2><pre class="line-numbers language-react" data-language="react"><code class="language-react">// 导入文件import React from "react";import ReactDOM from "react-dom";// 先引入Css文件import './css/index.css'const h1 =( &lt;h1 className="title" style={{color:'pink',backgroundColor:'skyblue'}}&gt;JSX的样式处理&lt;/h1&gt;)ReactDOM.render(h1,document.querySelector('#root'))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
       
       
+      <categories>
+          
+          <category> 前端篇 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> React </tag>
+            
+            <tag> 代码片段 </tag>
+            
+        </tags>
       
     </entry>
     
