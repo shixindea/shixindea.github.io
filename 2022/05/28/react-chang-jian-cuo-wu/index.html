@@ -664,14 +664,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    162
+                    466
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -726,7 +726,97 @@ function Hello() {
 
 root.render(&lt;Hello /&gt;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="2-独立方法中this报错问题"><a href="#2-独立方法中this报错问题" class="headerlink" title="2.独立方法中this报错问题"></a>2.独立方法中this报错问题</h2><p><img src="C:\Users\袁鑫德\AppData\Roaming\Typora\typora-user-images\image-20220528141405755.png" alt="image-20220528141405755"></p>
+<h2 id="2-独立方法中this报错问题"><a href="#2-独立方法中this报错问题" class="headerlink" title="2.独立方法中this报错问题"></a>2.独立方法中this报错问题</h2><p><img src="https://s1.ax1x.com/2022/05/28/XuKVaT.png" alt="this指向报错"></p>
+<blockquote>
+<p>造成这种现象的原因是 函数中是不能使用this的，我们可以在调用函数之前，使用<code>箭头函数</code>,或者<code>bind</code>绑定</p>
+</blockquote>
+<p>出错代码</p>
+<pre class="line-numbers language-react" data-language="react"><code class="language-react">import React from "react";
+import {  createRoot}  from 'react-dom/client';
+const container = document.querySelector('#root');
+const root = createRoot(container);
+class Hello extends React.Component{
+  state = {
+  count:6
+  }
+  onhandleClick() {
+    this.setState({
+      count: this.state.count + 1
+    })
+  }
+  render() {
+    return (
+      &lt;button onClick={this.onhandleClick}&gt;{this.state.count}&lt;/button&gt;
+    )
+  }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="解决方法1-使用箭头函数"><a href="#解决方法1-使用箭头函数" class="headerlink" title="解决方法1.使用箭头函数"></a>解决方法1.使用箭头函数</h4><p>将button按钮修改为以下代码即可</p>
+<pre class="line-numbers language-react" data-language="react"><code class="language-react">&lt;button onClick={()=&gt;this.onhandleClick()}&gt;{this.state.count}&lt;/button&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="解决方法2-使用bind绑定"><a href="#解决方法2-使用bind绑定" class="headerlink" title="解决方法2.使用bind绑定"></a>解决方法2.使用bind绑定</h4><pre class="line-numbers language-react" data-language="react"><code class="language-react">import React from "react";
+import {  createRoot}  from 'react-dom/client';
+const container = document.querySelector('#root');
+const root = createRoot(container);
+class Hello extends React.Component{
+  constructor() {
+    super()
+    this.state = {
+      count: 6
+    }
+    this.onhandleClick = this.onhandleClick.bind(this)
+ }
+
+  onhandleClick() {
+    this.setState({
+      count: this.state.count + 1
+    })
+  }
+
+  render() {
+    return (
+      &lt;button onClick={this.onhandleClick}&gt;{this.state.count}&lt;/button&gt;
+    )
+  }
+}
+root.render(&lt;Hello /&gt;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="解决方法3-class实例方法-推荐使用"><a href="#解决方法3-class实例方法-推荐使用" class="headerlink" title="解决方法3.class实例方法(推荐使用)"></a>解决方法3.class实例方法<code>(推荐使用)</code></h4><blockquote>
+<p>利用<code>箭头函数</code>形式的<code>class实例</code>方法<br>注意:该语法是实验性语法,但是,由于<code>babel</code>的存在可以直接使用</p>
+</blockquote>
+<p>直接将方法设置成箭头函数就可以啦</p>
+<pre class="line-numbers language-react" data-language="react"><code class="language-react">class Hello extends React.Component{
+  state = {
+      count: 6
+    }
+
+  onhandleClick=()=&gt; {
+    this.setState({
+      count: this.state.count + 1
+    })
+  }
+
+  render() {
+    return (
+      &lt;button onClick={this.onhandleClick}&gt;{this.state.count}&lt;/button&gt;
+    )
+  }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                 
             </div>
@@ -1566,7 +1656,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">9.6k</span>&nbsp;字
+                class="white-color">9.9k</span>&nbsp;字
             
             
             
