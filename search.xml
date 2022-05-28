@@ -4,6 +4,45 @@
   
     
     <entry>
+      <title></title>
+      <link href="posts/0.html"/>
+      <url>posts/0.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="React常见错误"><a href="#React常见错误" class="headerlink" title="React常见错误"></a>React常见错误</h1><h2 id="1-render版本错误"><a href="#1-render版本错误" class="headerlink" title="1. render版本错误"></a>1. render版本错误</h2><blockquote><p>Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it’s running React 17. Learn more: <a href="https://reactjs.org/link/switch-to-createroot">https://reactjs.org/link/switch-to-createroot</a></p></blockquote><p>这个错误是React18不支持渲染<code>render</code>了</p><p>将原始代码</p><pre class="line-numbers language-react" data-language="react"><code class="language-react">import React from "react";import ReactDOM from "react-dom";function Hello() {  return (    &lt;div&gt;这是第一个函数组件&lt;/div&gt;  )}ReactDOM.render(&lt;Hello /&gt;, document.querySelector('#root'))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>替换为以下代码</p><pre class="line-numbers language-react" data-language="react"><code class="language-react">import React from "react";import { createRoot } from 'react-dom/client';const container = document.querySelector('#root');const root = createRoot(container);function Hello() {  return (    &lt;div&gt;这是第一个函数组件&lt;/div&gt;  )}root.render(&lt;Hello /&gt;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="posts/0.html"/>
+      <url>posts/0.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="React-笔记"><a href="#React-笔记" class="headerlink" title="React 笔记"></a>React 笔记</h1><h2 id="1-创建组件"><a href="#1-创建组件" class="headerlink" title="1.创建组件"></a>1.创建组件</h2><h4 id="函数创建组件"><a href="#函数创建组件" class="headerlink" title="函数创建组件"></a>函数创建组件</h4><blockquote><p>●函数组件:使用JS的函数(或箭头函数)创建的组件<br>●约定1: 函数名称必须以<code>大写字母开头</code><br>●约定2 :函数组件必须有<code>返回值</code>，表示该组件的结构</p></blockquote><pre class="line-numbers language-react" data-language="react"><code class="language-react">function Hello(){    return{        &lt;div&gt;这是我的第一个函数组件！&lt;/div&gt;    }}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="类创建组件"><a href="#类创建组件" class="headerlink" title="类创建组件"></a>类创建组件</h4><blockquote><p>类组件:使用ES6的class创建的组件<br>约定1 :类名称也必须以<code>大写字母开头</code><br>约定2 :类组件应该继承<code>React.Component</code>父类,从而可以使用父类中提供的方法或属性<br>约定3 :类组件必须提供<code>render()</code>方法<br>约定4 : render)方法<code>必须有返回值</code>,表示该组件的结构</p></blockquote><pre class="line-numbers language-react" data-language="react"><code class="language-react">import React from "react";import {  createRoot}  from 'react-dom/client';const container = document.querySelector('#root');const root = createRoot(container);class Hello extends React.Component{  render() {    return (      &lt;div&gt;这是一个类组件&lt;/div&gt;    )  }}root.render(&lt;Hello /&gt;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="posts/0.html"/>
+      <url>posts/0.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="React基础代码片段"><a href="#React基础代码片段" class="headerlink" title="React基础代码片段"></a>React基础代码片段</h1><h2 id="1-列表渲染"><a href="#1-列表渲染" class="headerlink" title="1. 列表渲染"></a>1. 列表渲染</h2><pre class="line-numbers language-react" data-language="react"><code class="language-react">// 导入文件import React from "react";import ReactDOM  from "react-dom";const songs = [  { id: 1, name: '痴心绝对' },  {id:2,name:'666'},  { id: 3, name: '南山南' },]const list =(   &lt; ul &gt;    {songs.map(item =&gt; &lt;li key={item.id}&gt;{item.name}&lt;/li&gt;  ) }  &lt;/ul &gt;)const title = &lt;h1&gt;{list}&lt;/h1&gt;ReactDOM.render(title,document.querySelector('#root'))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="2-行内样式和className调用样式"><a href="#2-行内样式和className调用样式" class="headerlink" title="2. 行内样式和className调用样式"></a>2. 行内样式和className调用样式</h2><pre class="line-numbers language-react" data-language="react"><code class="language-react">// 导入文件import React from "react";import ReactDOM from "react-dom";// 先引入Css文件import './css/index.css'const h1 =( &lt;h1 className="title" style={{color:'pink',backgroundColor:'skyblue'}}&gt;JSX的样式处理&lt;/h1&gt;)ReactDOM.render(h1,document.querySelector('#root'))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hexo主题下载</title>
       <link href="posts/4a17b156.html"/>
       <url>posts/4a17b156.html</url>
