@@ -664,14 +664,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    866
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    5 分
                 </div>
                 
 
@@ -880,9 +880,75 @@ class Hello extends React.Component{
 }
 root.render(&lt;Hello /&gt;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<h2 id="5-表单处理-受控组件"><a href="#5-表单处理-受控组件" class="headerlink" title="5.表单处理-受控组件"></a>5.表单处理-受控组件</h2><p>步骤：</p>
+<blockquote>
+<p>1.在state中添加一个状态,作为表单元素的value值(控制表单元素值的来源)<br>2.给表单元素绑定change事件,将表单元素的值设置为state的值(控制表单元素值的变化)</p>
+</blockquote>
+<pre class="line-numbers language-react" data-language="react"><code class="language-react">class Hello extends React.Component{
+  state = {
+    text:''
+    }
+  handleChange=(e)=&gt;{
+    this.setState(
+      {
+        text: e.target.value
+      }
+    )
+  }
 
+  render() {
+    return (
+        &lt;input type="text" value={this.state.text} onChange={this.handleChange} /&gt;
+    )
+  }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>是啥</p>
+<h2 id="6-表单处理-非受控组件"><a href="#6-表单处理-非受控组件" class="headerlink" title="6.表单处理-非受控组件"></a>6.表单处理-非受控组件</h2><blockquote>
+<p>1.调用React.createRef(方法创建一个ref对象</p>
+</blockquote>
+<pre class="line-numbers language-react" data-language="react"><code class="language-react"> constructor() {
+   super()
+   // 创建ref
+   this.txtRef=React.createRef()
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>2.将创建好的ref对象添加到文本框中</p>
+</blockquote>
+<pre class="line-numbers language-react" data-language="react"><code class="language-react">&lt;input  type="text" ref={this.txtRef}/&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<blockquote>
+<p>3.通过 ref 对象获取到文本框的值</p>
+</blockquote>
+<pre class="line-numbers language-react" data-language="react"><code class="language-react">console.log('文本框值为：',this.txtRef.current.value);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><code>**具体代码**</code></p>
+<pre class="line-numbers language-react" data-language="react"><code class="language-react">import React from "react";
+import {  createRoot}  from 'react-dom/client';
+const container = document.querySelector('#root');
+const root = createRoot(container);
+
+class Hello extends React.Component{
+  constructor() {
+    super()
+    // 创建ref
+    this.txtRef=React.createRef()
+ }
+//  获取文本框的值
+  getTxt = () =&gt; {
+    console.log('文本框值为：',this.txtRef.current.value);
+  }
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;input  type="text" ref={this.txtRef}/&gt;
+        &lt;button onClick={this.getTxt}&gt;获取文本框的值&lt;/button&gt;
+    &lt;/div&gt;
+    )
+  }
+}
+root.render(&lt;Hello /&gt;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 
                 
             </div>
@@ -1735,7 +1801,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">9.9k</span>&nbsp;字
+                class="white-color">10.6k</span>&nbsp;字
             
             
             

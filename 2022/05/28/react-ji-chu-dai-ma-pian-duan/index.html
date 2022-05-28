@@ -681,14 +681,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    216
+                    641
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -767,6 +767,112 @@ class Hello extends React.Component{
   }
 }
 root.render(&lt;Hello /&gt;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="4-input输入框，textarea富文本框双向绑定"><a href="#4-input输入框，textarea富文本框双向绑定" class="headerlink" title="4.input输入框，textarea富文本框双向绑定"></a>4.input输入框，textarea富文本框双向绑定</h2><blockquote>
+<p>单选框，复选框，输入框，富文本框都是同理,换汤不换药</p>
+<p>复选框修改值时是<code>e.target.value</code></p>
+<p>单选框，输入框，富文本框为<code> e.target.value</code></p>
+</blockquote>
+<pre class="line-numbers language-react" data-language="react"><code class="language-react">import React from "react";
+import {  createRoot}  from 'react-dom/client';
+const container = document.querySelector('#root');
+const root = createRoot(container);
+class Hello extends React.Component{
+  state = {
+    count: 6,
+    text: '',
+    content:""
+    }
+
+  onhandleClick=()=&gt; {
+    this.setState({
+      count: this.state.count + 1
+    })
+  }
+  handleChange=(e)=&gt;{
+    this.setState(
+      {
+        text: e.target.value
+      }
+    )
+  }
+  handleContent = (e) =&gt; {
+    this.setState(
+      {
+        content: e.target.value
+      }
+    )
+  }
+
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;input type="text" value={this.state.text} onChange={this.handleChange} /&gt;
+        &lt;textarea value={this.state.content} onChange={this.handleContent} /&gt;
+        &lt;button onClick={this.onhandleClick}&gt;{this.state.count}&lt;/button&gt;
+    &lt;/div&gt;
+    )
+  }
+}
+root.render(&lt;Hello /&gt;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>通过这个案例我们可以看到，如果每一个事件处理函数都被定义一次的化，这个代码量是相当的大的，因此我们应该对这个事件处理函数进行优化。</p>
+<p><strong>多表单元素优化步骤：</strong></p>
+<blockquote>
+<p>1.给表单元素添加name属性,名称与state相同<br>2.根据表单元素类型获取对应值<br>3.在change事件处理程序中通过[name]来修改对应的state</p>
+</blockquote>
+</blockquote>
+<p><img src="https://s1.ax1x.com/2022/05/28/XuaHDU.png" alt="多表单优化步骤"></p>
+<p>详细代码</p>
+<pre class="line-numbers language-react" data-language="react"><code class="language-react">import React from "react";
+import {  createRoot}  from 'react-dom/client';
+const container = document.querySelector('#root');
+const root = createRoot(container);
+class Hello extends React.Component{
+  state = {
+    count: 6,
+    text: '',
+    content: "",
+    ischecked:false
+    }
+  handleForm = (e) =&gt; {
+    // 获取当前DOM 对象
+    const target = e.target
+    // 根据类型获取值
+    const value = target.type === 'checkbox'
+      ? target.checked
+      : target.value
+    // 获取name
+    const name = target.name
+    this.setState({
+      [name]:value
+    })
+  }
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;input name="text" type="text" value={this.state.text} onChange={this.handleForm} /&gt;
+        &lt;textarea name="content" value={this.state.content} onChange={this.handleForm} /&gt;
+        &lt;input type="checkbox" name="ischecked" checked={this.state.ischecked} onChange={this.handleForm}  /&gt;
+        {/* &lt;button onClick={this.handleForm}&gt;{this.state.count}&lt;/button&gt; */}
+    &lt;/div&gt;
+    )
+  }
+}
+root.render(&lt;Hello /&gt;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                 
@@ -1624,7 +1730,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">9.9k</span>&nbsp;字
+                class="white-color">10.6k</span>&nbsp;字
             
             
             
