@@ -657,21 +657,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-05-28
+                    2022-05-29
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    1.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    8 分
                 </div>
                 
 
@@ -949,7 +949,148 @@ class Hello extends React.Component{
 }
 root.render(&lt;Hello /&gt;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<h2 id="7-组件的props"><a href="#7-组件的props" class="headerlink" title="7.组件的props"></a>7.组件的props</h2><blockquote>
+<ul>
+<li>组件是封闭的 ,要接收外部数据应该通过<code>props</code>来实现</li>
+<li>props的作用 :接收传递给组件的数据</li>
+<li>传递数据:给组件标签添加属性</li>
+<li>接收数据:函数组件通过参数props接收数据,类组件通过this.props接收数据</li>
+</ul>
+</blockquote>
+<h3 id="props-特点-："><a href="#props-特点-：" class="headerlink" title="props 特点 ："></a>props 特点 ：</h3><blockquote>
+<p>可以传递任意类型的数据</p>
+<p> <code>props</code>属性是<code>只读</code>属性,<code>不可以修改</code></p>
+<p>注意：使用类组件时,如果写了构造函数,应该将props传递给super( ),否则,无法在构造函数中获取到props !</p>
+</blockquote>
+<pre class="line-numbers language-react" data-language="react"><code class="language-react">class Hello extends React.Component {
+  constructor(props) {
+    // 推荐props传递给父类构造函数
+    super(props)
+    console.log(props)
+  }
+  render() {
+    console.log(this.props)
+    return (&lt;h1&gt;props:{this.props.age}&lt;/h1&gt;);
+  }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+
+
+<h3 id="组件接收数据"><a href="#组件接收数据" class="headerlink" title="组件接收数据"></a>组件接收数据</h3><h4 id="1-函数组件：通过参数-props接收数据"><a href="#1-函数组件：通过参数-props接收数据" class="headerlink" title="1. 函数组件：通过参数 props接收数据"></a>1. 函数组件：通过参数 <code>props</code>接收数据</h4><pre class="line-numbers language-react" data-language="react"><code class="language-react">import React from "react";
+import { createRoot } from 'react-dom/client';
+const container = document.querySelector('#root');
+const root = createRoot(container);
+
+const Hello = (props) =&gt; {
+  console.log(props)
+  return (
+    &lt; div &gt;
+      &lt;h1&gt;props:  {props.name}&lt;/h1&gt;
+    &lt;/div &gt;
+  )
+}
+
+root.render(&lt;Hello name="rook" age={19} /&gt;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="2-类组件使用通过this-props接收数据"><a href="#2-类组件使用通过this-props接收数据" class="headerlink" title="2.  类组件使用通过this.props接收数据"></a>2.  类组件使用通过<code>this.props</code>接收数据</h4><pre class="line-numbers language-react" data-language="react"><code class="language-react">import React from "react";
+import { createRoot } from 'react-dom/client';
+const container = document.querySelector('#root');
+const root = createRoot(container);
+
+class Hello extends React.Component {
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;h1&gt;props:{this.props.age}&lt;/h1&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+
+root.render(&lt;Hello name="rook" age={19} /&gt;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="组件可传递类型"><a href="#组件可传递类型" class="headerlink" title="组件可传递类型"></a>组件可传递类型</h3><blockquote>
+<p>组件可以传递<code>字符型变量</code>，<code>数值型变量</code>，<code>数组</code>，<code>函数</code>，<code>标签</code></p>
+</blockquote>
+<pre class="line-numbers language-react" data-language="react"><code class="language-react">import React from "react";
+import { createRoot } from 'react-dom/client';
+const container = document.querySelector('#root');
+const root = createRoot(container);
+
+const Hello = (props) =&gt; {
+  console.log(props)
+  return (
+    &lt; div &gt;
+      &lt;h1&gt;props:  {props.name}&lt;/h1&gt;
+    &lt;/div &gt;
+  )
+}
+
+root.render(&lt;Hello
+  name="rook"
+  age={19}
+  colors={["red", "green", 'yellow']}
+  fn={() =&gt; console.log('这是一个函数')}
+  tag={&lt;p&gt;这是一个P标签&lt;/p&gt;}
+/&gt;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="8-组件通讯的三种方式"><a href="#8-组件通讯的三种方式" class="headerlink" title="8.组件通讯的三种方式"></a>8.组件通讯的三种方式</h2><h3 id="1-父组件-—-gt-子组件"><a href="#1-父组件-—-gt-子组件" class="headerlink" title="1.父组件 —> 子组件"></a>1.父组件 —&gt; 子组件</h3><blockquote>
+<ol>
+<li>父组件提供要传递的state数据</li>
+<li>给子组件标签添加属性,值为state中的数据</li>
+<li>子组件中通过props接收父组件中传递的数据</li>
+</ol>
+</blockquote>
+<pre class="line-numbers language-react" data-language="react"><code class="language-react">import React from "react";
+import { createRoot } from 'react-dom/client';
+const container = document.querySelector('#root');
+const root = createRoot(container);
+
+// 父组件
+class Parent extends React.Component {
+  state = {
+    lastName: '袁果锅'
+  }
+  render() {
+    return (
+      &lt;div className="parent"&gt;父组件
+        &lt;Child name={this.state.lastName} /&gt;&lt;/div &gt;
+    );
+  }
+}
+// 子组件
+const Child = props =&gt; {
+  console.log('子组件props', props);
+  return (
+    &lt;div className="child"&gt;
+      &lt;p&gt;子组件，接收到父组件的数据：{props.name}&lt;/p&gt;
+    &lt;/div &gt;
+  );
+}
+	
+root.render(&lt;Parent /&gt;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="2-子组件-—-gt-父组件"><a href="#2-子组件-—-gt-父组件" class="headerlink" title="2.子组件 —> 父组件"></a>2.子组件 —&gt; 父组件</h3><blockquote>
+<p>思路: 利用回调函数,父组件提供回调,子组件调用,将要传递的数据作为回调函数的参数。</p>
+<ol>
+<li><p>父组件提供一个回调函数 (用于接收数据)</p>
+</li>
+<li><p>将该函数作为属性的值,传递给子组件</p>
+</li>
+<li><p>子组件通过props调用回调函数</p>
+</li>
+<li><p>将子组件的数据作为参数传递给回调函数</p>
+</li>
+</ol>
+</blockquote>
+<pre class="line-numbers language-react" data-language="react"><code class="language-react">
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h3 id="3-父组件-—-gt-子组件"><a href="#3-父组件-—-gt-子组件" class="headerlink" title="3.父组件 —> 子组件"></a>3.父组件 —&gt; 子组件</h3>
                 
             </div>
             <hr/>
@@ -1143,7 +1284,7 @@ root.render(&lt;Hello /&gt;)<span aria-hidden="true" class="line-numbers-rows"><
                         <img src="https://s1.ax1x.com/2022/05/28/XK6XtK.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="https://s1.ax1x.com/2022/05/28/XK6b01.jpg" class="reward-img" alt="微信打赏二维码">
+                        <img src="/medias/wechart.jpg" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -1801,7 +1942,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">11k</span>&nbsp;字
+                class="white-color">13.8k</span>&nbsp;字
             
             
             
