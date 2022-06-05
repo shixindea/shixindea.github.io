@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="shixindea 计算机 Blog web前端">
+    <meta name="keywords" content="Uni-app笔记, shixindea 计算机 Blog web前端">
     <meta name="description" content="本科 | 信息工程学院 | 教育技术学">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Guoguoの博客</title>
+    <title>Uni-app笔记 | Guoguoの博客</title>
 
     <link rel="icon" type="image/jpeg" href="https://5fou.com/i/2022/05/20/p3fx7s.jpg">
 
@@ -512,12 +512,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/banner/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">Uni-app笔记</h1>
                 </div>
             </div>
         </div>
@@ -636,12 +636,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Uni-app/">
+                                <span class="chip bg-color">Uni-app</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/" class="post-category">
+                                前端篇
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -650,21 +663,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-05-28
+                    2022-05-20
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-05-28
+                    2022-06-05
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    466
+                    417
                 </div>
                 
 
@@ -694,128 +707,119 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="React常见错误"><a href="#React常见错误" class="headerlink" title="React常见错误"></a>React常见错误</h1><h2 id="1-render版本错误"><a href="#1-render版本错误" class="headerlink" title="1. render版本错误"></a>1. render版本错误</h2><blockquote>
-<p>Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it’s running React 17. Learn more: <a target="_blank" rel="noopener" href="https://reactjs.org/link/switch-to-createroot">https://reactjs.org/link/switch-to-createroot</a></p>
-</blockquote>
-<p>这个错误是React18不支持渲染<code>render</code>了</p>
-<p>将原始代码</p>
-<pre class="line-numbers language-react" data-language="react"><code class="language-react">import React from "react";
-import ReactDOM from "react-dom";
+                <h1 id="Uni-app笔记"><a href="#Uni-app笔记" class="headerlink" title="Uni-app笔记"></a>Uni-app笔记</h1><h2 id="1-swiper的坑："><a href="#1-swiper的坑：" class="headerlink" title="1.swiper的坑："></a>1.swiper的坑：</h2><p> 组件名称<code>swiper.vue </code>或者<code> Swiper.vue</code> , 在传递数据的时候有可能图片就不见了。</p>
+<p> 改变图片的大小咱们要用<code>rpx</code>的单位。</p>
+<p>本身<code>swiper</code>是有<code>150px</code>的默认高度，app中需要改变<code>默认高度</code>需要加入:</p>
+<p>​         swiper{</p>
+<p>​             width:100%;</p>
+<p>​             height:400rpx;</p>
+<p>​         }</p>
+<h2 id="2-组件-插槽做‘热销爆品模块’"><a href="#2-组件-插槽做‘热销爆品模块’" class="headerlink" title="2.组件+插槽做‘热销爆品模块’"></a>2.组件+插槽做‘热销爆品模块’</h2><p>分为调用组件和被调用组件</p>
+<p>插件代码</p>
+<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&lt;template&gt;
+  &lt;view class="Commodity"&gt;
+    &lt;!-- 单个商品组件--&gt;
+    &lt;view class="Commodity-item" 
+    v-for="item in dataList" 
+    :key="item.id"
+    :style="'width:'+itemw+';'"
+    &gt;
+      &lt;image class="commodity-img" :src="item.imgUrl" mode=""&gt;&lt;/image&gt;
+      &lt;view class="commodity-content"&gt;
+        &lt;text class="commodity-name"&gt;
+         {{item.name}}
+        &lt;/text&gt;
+        &lt;view class=""&gt;
+          &lt;text class="pprice"&gt;{{item.pprice}}&lt;/text&gt;
+          &lt;text class="oprice"&gt;{{item.oprice}}&lt;/text&gt;
+        &lt;/view&gt;
+        &lt;text class="discount"&gt;{{item.discount}} &lt;/text&gt;
+      &lt;/view&gt;
+    &lt;/view&gt;  
+  &lt;/view&gt;
+&lt;/template&gt;
 
-function Hello() {
-  return (
-    &lt;div&gt;这是第一个函数组件&lt;/div&gt;
-  )
-}
-ReactDOM.render(&lt;Hello /&gt;, document.querySelector('#root'))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&lt;script&gt;
+  export default{
+   props:{
+      dataList:Array,
+      itemw:{
+        type:String,
+        default:"375rpx"
+      }
+   }
+  }
+&lt;/script&gt;
 
+&lt;style&gt;
+  .Commodity {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
+  .Commodity-item {
+    padding-bottom: 20rpx;
+  }
 
-<p>替换为以下代码</p>
-<pre class="line-numbers language-react" data-language="react"><code class="language-react">import React from "react";
-import { createRoot } from 'react-dom/client';
+  .commodity-img {
+    width: 100%;
+    height: 375rpx;
+  }
 
-const container = document.querySelector('#root');
-const root = createRoot(container);
+  .commodity-content {
+    text-align: center;
+  }
 
-function Hello() {
-  return (
-    &lt;div&gt;这是第一个函数组件&lt;/div&gt;
-  )
-}
+  .commodity-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #333;
+    word-break: break-all;
+    padding: 6rpx 20rpx;
+  }
 
-root.render(&lt;Hello /&gt;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+  .oprice {
+    text-decoration: line-through;
+    font-size: 24rpx;
+    color: #999;
+  }
 
-<h2 id="2-独立方法中this报错问题"><a href="#2-独立方法中this报错问题" class="headerlink" title="2.独立方法中this报错问题"></a>2.独立方法中this报错问题</h2><p><img src="https://s1.ax1x.com/2022/05/28/XuKVaT.png" alt="this指向报错"></p>
+  .discount {
+    border-radius: 4rpx;
+    border: 1px solid #FF3333;
+    padding: 2rpx 10rpx;
+    font-size: 20rpx;
+    color: #FF3333;
+  }
+&lt;/style&gt;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 <blockquote>
-<p>造成这种现象的原因是 函数中是不能使用this的，我们可以在调用函数之前，使用<code>箭头函数</code>,或者<code>bind</code>绑定</p>
+<p>其中传递的参数</p>
+<table>
+<thead>
+<tr>
+<th>dataList</th>
+<th>被调用过来的数组数据</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>itemw</td>
+<td>每个组件显示时，显示的列数</td>
+</tr>
+</tbody></table>
 </blockquote>
-<p>出错代码</p>
-<pre class="line-numbers language-react" data-language="react"><code class="language-react">import React from "react";
-import {  createRoot}  from 'react-dom/client';
-const container = document.querySelector('#root');
-const root = createRoot(container);
-class Hello extends React.Component{
-  state = {
-  count:6
-  }
-  onhandleClick() {
-    this.setState({
-      count: this.state.count + 1
-    })
-  }
-  render() {
-    return (
-      &lt;button onClick={this.onhandleClick}&gt;{this.state.count}&lt;/button&gt;
-    )
-  }
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="解决方法1-使用箭头函数"><a href="#解决方法1-使用箭头函数" class="headerlink" title="解决方法1.使用箭头函数"></a>解决方法1.使用箭头函数</h4><p>将button按钮修改为以下代码即可</p>
-<pre class="line-numbers language-react" data-language="react"><code class="language-react">&lt;button onClick={()=&gt;this.onhandleClick()}&gt;{this.state.count}&lt;/button&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h4 id="解决方法2-使用bind绑定"><a href="#解决方法2-使用bind绑定" class="headerlink" title="解决方法2.使用bind绑定"></a>解决方法2.使用bind绑定</h4><pre class="line-numbers language-react" data-language="react"><code class="language-react">import React from "react";
-import {  createRoot}  from 'react-dom/client';
-const container = document.querySelector('#root');
-const root = createRoot(container);
-class Hello extends React.Component{
-  constructor() {
-    super()
-    this.state = {
-      count: 6
-    }
-    this.onhandleClick = this.onhandleClick.bind(this)
- }
-
-  onhandleClick() {
-    this.setState({
-      count: this.state.count + 1
-    })
-  }
-
-  render() {
-    return (
-      &lt;button onClick={this.onhandleClick}&gt;{this.state.count}&lt;/button&gt;
-    )
-  }
-}
-root.render(&lt;Hello /&gt;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="解决方法3-class实例方法-推荐使用"><a href="#解决方法3-class实例方法-推荐使用" class="headerlink" title="解决方法3.class实例方法(推荐使用)"></a>解决方法3.class实例方法<code>(推荐使用)</code></h4><blockquote>
-<p>利用<code>箭头函数</code>形式的<code>class实例</code>方法<br>注意:该语法是实验性语法,但是,由于<code>babel</code>的存在可以直接使用</p>
+<h2 id="3-uni-app-卡片-Card-问题"><a href="#3-uni-app-卡片-Card-问题" class="headerlink" title="3.uni-app 卡片 Card 问题"></a>3.uni-app 卡片 Card 问题</h2><p>card不能放到模板的上方，否则会出现白屏</p>
+<blockquote>
+<p>将他放到上一个组件得下面就好啦</p>
 </blockquote>
-<p>直接将方法设置成箭头函数就可以啦</p>
-<pre class="line-numbers language-react" data-language="react"><code class="language-react">class Hello extends React.Component{
-  state = {
-      count: 6
-    }
-
-  onhandleClick=()=&gt; {
-    this.setState({
-      count: this.state.count + 1
-    })
-  }
-
-  render() {
-    return (
-      &lt;button onClick={this.onhandleClick}&gt;{this.state.count}&lt;/button&gt;
-    )
-  }
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&lt;template v-if="k.type==='recommendList'" &gt;
+  &lt;Recommend :dataList='k.data'&gt;&lt;/Recommend&gt;
+  &lt;Card cardTitle="猜你喜欢"&gt;&lt;/Card&gt;
+&lt;/template&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 
                 
@@ -843,7 +847,7 @@ root.render(&lt;Hello /&gt;)<span aria-hidden="true" class="line-numbers-rows"><
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://shixindea.github.io/2022/05/28/react-chang-jian-cuo-wu/">https://shixindea.github.io/2022/05/28/react-chang-jian-cuo-wu/</a>
+                    <a href="https://shixindea.github.io/2022/05/20/uni-app-bi-ji/">https://shixindea.github.io/2022/05/20/uni-app-bi-ji/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -880,7 +884,11 @@ root.render(&lt;Hello /&gt;)<span aria-hidden="true" class="line-numbers-rows"><
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/Uni-app/">
+                                    <span class="chip bg-color">Uni-app</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1354,32 +1362,43 @@ new Valine({
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/06/03/uni-app-shang-cheng-kai-fa/">
+                <a href="/2022/05/20/uni-app-bao-cuo-jie-jue/">
                     <div class="card-image">
                         
+                        <img src="/medias/banner/10.jpg" class="responsive-img" alt="Uni-app报错解决">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg" class="responsive-img" alt="">
-                        
-                        <span class="card-title"></span>
+                        <span class="card-title">Uni-app报错解决</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Uni-app报错解决
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-06-03
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-20
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Guoguo
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/" class="post-category">
+                                    前端篇
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Uni-app/">
+                        <span class="chip bg-color">Uni-app</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1391,32 +1410,43 @@ new Valine({
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/05/28/react-bi-ji/">
+                <a href="/2022/05/20/css-cao-zuo/">
                     <div class="card-image">
                         
+                        <img src="/medias/banner/3.jpg" class="responsive-img" alt="css 操作">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg" class="responsive-img" alt="">
-                        
-                        <span class="card-title"></span>
+                        <span class="card-title">css 操作</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            css的案例操作
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-20
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Guoguo
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/" class="post-category">
+                                    前端篇
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/css/">
+                        <span class="chip bg-color">css</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1654,7 +1684,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">13.8k</span>&nbsp;字
+                class="white-color">14.2k</span>&nbsp;字
             
             
             

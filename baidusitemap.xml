@@ -1,43 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://shixindea.github.io/2022/06/03/uni-app-bi-ji/</loc>
-    <lastmod>2022-06-04</lastmod>
+    <loc>https://shixindea.github.io/2022/05/23/blog/</loc>
+    <lastmod>2022-06-05</lastmod>
   </url>
   <url>
-    <loc>https://shixindea.github.io/2022/06/03/uni-app-dai-ma-pian-duan/</loc>
-    <lastmod>2022-06-04</lastmod>
+    <loc>https://shixindea.github.io/2022/05/20/css-cao-zuo/</loc>
+    <lastmod>2022-06-05</lastmod>
   </url>
   <url>
-    <loc>https://shixindea.github.io/2022/06/04/css-bi-ji/</loc>
-    <lastmod>2022-06-04</lastmod>
+    <loc>https://shixindea.github.io/2022/05/20/css-bi-ji/</loc>
+    <lastmod>2022-06-05</lastmod>
   </url>
   <url>
-    <loc>https://shixindea.github.io/2022/06/04/css-cao-zuo/</loc>
-    <lastmod>2022-06-03</lastmod>
+    <loc>https://shixindea.github.io/2022/05/23/hexo-zhu-ti-an-zhuang-jiao-cheng/</loc>
+    <lastmod>2022-06-05</lastmod>
   </url>
   <url>
-    <loc>https://shixindea.github.io/2022/06/03/uni-app-shang-cheng-kai-fa/</loc>
-    <lastmod>2022-06-03</lastmod>
+    <loc>https://shixindea.github.io/2022/05/20/react-bi-ji/</loc>
+    <lastmod>2022-06-05</lastmod>
   </url>
   <url>
-    <loc>https://shixindea.github.io/2022/06/03/uni-app-bao-cuo-jie-jue/</loc>
-    <lastmod>2022-06-03</lastmod>
+    <loc>https://shixindea.github.io/2022/05/20/react-chang-jian-cuo-wu/</loc>
+    <lastmod>2022-06-05</lastmod>
   </url>
   <url>
-    <loc>https://shixindea.github.io/2022/05/28/react-bi-ji/</loc>
-    <lastmod>2022-05-29</lastmod>
+    <loc>https://shixindea.github.io/2022/05/20/uni-app-shang-cheng-kai-fa/</loc>
+    <lastmod>2022-06-05</lastmod>
+  </url>
+  <url>
+    <loc>https://shixindea.github.io/2022/05/20/uni-app-bao-cuo-jie-jue/</loc>
+    <lastmod>2022-06-05</lastmod>
+  </url>
+  <url>
+    <loc>https://shixindea.github.io/2022/05/20/uni-app-bi-ji/</loc>
+    <lastmod>2022-06-05</lastmod>
+  </url>
+  <url>
+    <loc>https://shixindea.github.io/2022/05/20/uni-app-dai-ma-pian-duan/</loc>
+    <lastmod>2022-06-05</lastmod>
   </url>
   <url>
     <loc>https://shixindea.github.io/2022/05/28/react-ji-chu-dai-ma-pian-duan/</loc>
-    <lastmod>2022-05-28</lastmod>
-  </url>
-  <url>
-    <loc>https://shixindea.github.io/2022/05/28/react-chang-jian-cuo-wu/</loc>
-    <lastmod>2022-05-28</lastmod>
-  </url>
-  <url>
-    <loc>https://shixindea.github.io/2022/05/23/blog/</loc>
     <lastmod>2022-05-28</lastmod>
   </url>
   <url>
@@ -47,10 +51,6 @@
   <url>
     <loc>https://shixindea.github.io/2022/05/20/git-ti-jiao/</loc>
     <lastmod>2022-05-23</lastmod>
-  </url>
-  <url>
-    <loc>https://shixindea.github.io/2022/05/23/hexo-zhu-ti-an-zhuang-jiao-cheng/</loc>
-    <lastmod>2022-05-20</lastmod>
   </url>
   <url>
     <loc>https://shixindea.github.io/2020/04/28/hexo-xr/</loc>

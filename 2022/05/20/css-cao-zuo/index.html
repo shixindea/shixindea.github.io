@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="shixindea 计算机 Blog web前端">
+    <meta name="keywords" content="css 操作, shixindea 计算机 Blog web前端">
     <meta name="description" content="本科 | 信息工程学院 | 教育技术学">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Guoguoの博客</title>
+    <title>css 操作 | Guoguoの博客</title>
 
     <link rel="icon" type="image/jpeg" href="https://5fou.com/i/2022/05/20/p3fx7s.jpg">
 
@@ -512,12 +512,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/banner/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">css 操作</h1>
                 </div>
             </div>
         </div>
@@ -636,12 +636,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/css/">
+                                <span class="chip bg-color">css</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/" class="post-category">
+                                前端篇
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -650,21 +663,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-06-04
+                    2022-05-20
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-06-04
+                    2022-06-05
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    13
+                    204
                 </div>
                 
 
@@ -694,7 +707,52 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="css笔记"><a href="#css笔记" class="headerlink" title="css笔记"></a>css笔记</h1><h2 id="1-white-space段落内不换行"><a href="#1-white-space段落内不换行" class="headerlink" title="1.  white-space段落内不换行"></a>1.  white-space段落内不换行</h2><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token property">white-space</span><span class="token punctuation">:</span> nowrap<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h1 id="css-操作"><a href="#css-操作" class="headerlink" title="css 操作"></a>css 操作</h1><h2 id="1-设置盒子内溢出内容为省略号"><a href="#1-设置盒子内溢出内容为省略号" class="headerlink" title="1. 设置盒子内溢出内容为省略号"></a>1. 设置盒子内溢出内容为省略号</h2><p><img src="https://s1.328888.xyz/2022/06/04/WWiOy.png" alt="溢出省略号"></p>
+<blockquote>
+<p>使用css来限制这个样式</p>
+<p>overflow: hidden;               <code>溢出隐藏</code><br>text-overflow: ellipsis;        <code>溢出显示省略号</code><br>display: -webkit-box;         <code>对象作为弹性伸缩盒子模型显示</code><br>-webkit-line-clamp: 2;        <code>文本显示的行数</code><br>-webkit-box-orient: vertical;  <code>设置或检索伸缩盒对象的子元素的排列方式</code><br>color: #333;<br>word-break: break-all;<br>padding: 6rpx 20rpx;</p>
+</blockquote>
+<p><strong>text-overflow</strong> <strong>属性</strong></p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>clip</td>
+<td>剪切文本。</td>
+</tr>
+<tr>
+<td>ellipsis</td>
+<td>显示省略符号 <strong>…</strong> 来代表被修剪的文本。</td>
+</tr>
+<tr>
+<td><em>string</em></td>
+<td>使用给定的字符串来代表被修剪的文本。</td>
+</tr>
+<tr>
+<td>initial</td>
+<td>设置为属性默认值。<a target="_blank" rel="noopener" href="https://www.runoob.com/cssref/css-initial.html">阅读关于 <em>initial</em></a></td>
+</tr>
+<tr>
+<td>inherit</td>
+<td>从父元素继承该属性值。 <a target="_blank" rel="noopener" href="https://www.runoob.com/cssref/css-inherit.html">阅读关于 <em>inherit</em></a></td>
+</tr>
+</tbody></table>
+<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+<span class="token property">text-overflow</span><span class="token punctuation">:</span> ellipsis<span class="token punctuation">;</span>
+<span class="token property">display</span><span class="token punctuation">:</span> -webkit-box<span class="token punctuation">;</span>
+<span class="token property">-webkit-line-clamp</span><span class="token punctuation">:</span> 2<span class="token punctuation">;</span>
+<span class="token property">-webkit-box-orient</span><span class="token punctuation">:</span> vertical<span class="token punctuation">;</span>
+<span class="token property">color</span><span class="token punctuation">:</span> #333<span class="token punctuation">;</span>
+<span class="token property">word-break</span><span class="token punctuation">:</span> break-all<span class="token punctuation">;</span>
+<span class="token property">padding</span><span class="token punctuation">:</span> 6rpx 20rpx<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
                 
             </div>
             <hr/>
@@ -720,7 +778,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://shixindea.github.io/2022/06/04/css-bi-ji/">https://shixindea.github.io/2022/06/04/css-bi-ji/</a>
+                    <a href="https://shixindea.github.io/2022/05/20/css-cao-zuo/">https://shixindea.github.io/2022/05/20/css-cao-zuo/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -757,7 +815,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/css/">
+                                    <span class="chip bg-color">css</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1227,39 +1289,48 @@ new Valine({
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/06/04/css-bi-ji/">
+                <a href="/2022/05/20/uni-app-bi-ji/">
                     <div class="card-image">
                         
+                        <img src="/medias/banner/7.jpg" class="responsive-img" alt="Uni-app笔记">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg" class="responsive-img" alt="">
-                        
-                        <span class="card-title"></span>
+                        <span class="card-title">Uni-app笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Uni-app笔记
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-04
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-20
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Guoguo
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/" class="post-category">
+                                    前端篇
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Uni-app/">
+                        <span class="chip bg-color">Uni-app</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1270,32 +1341,43 @@ new Valine({
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/06/04/css-cao-zuo/">
+                <a href="/2022/05/20/css-bi-ji/">
                     <div class="card-image">
                         
+                        <img src="/medias/banner/2.jpg" class="responsive-img" alt="css笔记">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg" class="responsive-img" alt="">
-                        
-                        <span class="card-title"></span>
+                        <span class="card-title">css笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            css笔记，记录经典知识点
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-20
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Guoguo
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/" class="post-category">
+                                    前端篇
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/css/">
+                        <span class="chip bg-color">css</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1533,7 +1615,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">13.8k</span>&nbsp;字
+                class="white-color">14.2k</span>&nbsp;字
             
             
             

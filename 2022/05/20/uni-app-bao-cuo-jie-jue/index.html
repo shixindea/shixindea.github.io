@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="shixindea 计算机 Blog web前端">
+    <meta name="keywords" content="Uni-app报错解决, shixindea 计算机 Blog web前端">
     <meta name="description" content="本科 | 信息工程学院 | 教育技术学">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Guoguoの博客</title>
+    <title>Uni-app报错解决 | Guoguoの博客</title>
 
     <link rel="icon" type="image/jpeg" href="https://5fou.com/i/2022/05/20/p3fx7s.jpg">
 
@@ -512,12 +512,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/banner/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">Uni-app报错解决</h1>
                 </div>
             </div>
         </div>
@@ -636,12 +636,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Uni-app/">
+                                <span class="chip bg-color">Uni-app</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/" class="post-category">
+                                前端篇
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -650,28 +663,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-06-03
+                    2022-05-20
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-06-04
+                    2022-06-05
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    560
+                    832
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    4 分
                 </div>
                 
 
@@ -694,136 +707,238 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Uni-app代码片段"><a href="#Uni-app代码片段" class="headerlink" title="Uni-app代码片段"></a>Uni-app代码片段</h1><h2 id="1-APP和小程序出现兼容性问题"><a href="#1-APP和小程序出现兼容性问题" class="headerlink" title="1.APP和小程序出现兼容性问题"></a>1.APP和小程序出现兼容性问题</h2><blockquote>
-<p>可以使用<code>if判断</code>来对<code>微信小程序</code>进行自定义适应</p>
+                <h1 id="Uni-app报错解决"><a href="#Uni-app报错解决" class="headerlink" title="Uni-app报错解决"></a>Uni-app报错解决</h1><h2 id="1-轮播图—小程序和App图片显示不全"><a href="#1-轮播图—小程序和App图片显示不全" class="headerlink" title="1.轮播图—小程序和App图片显示不全"></a>1.轮播图—小程序和App图片显示不全</h2><blockquote>
+<p>我们在<code>indexSwiper组件</code>中定义了n张图片，但是惊奇的发现在<code>app</code>中图片显示不全，但是在<code>小程序</code>中运行良好，图片的宽高不能完整的显示出来。</p>
+<p>因为小程序中默认在<code>uni.css</code>中为我们定义了默认样式</p>
+<p>我们可以在<code>indexSwiper组件</code>中为轮播图添加命令。</p>
 </blockquote>
-<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&lt;view class="content"&gt;
-   &lt;!-- #ifdef MP-WEIXIN --&gt;
-   &lt;view class="wx-nav"&gt;
-     &lt;text&gt;果锅&lt;/text&gt;
-   &lt;/view&gt;
-   &lt;!-- #endif --&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="2-TopBar部分点击谁，给谁加下划线"><a href="#2-TopBar部分点击谁，给谁加下划线" class="headerlink" title="2.TopBar部分点击谁，给谁加下划线"></a>2.TopBar部分点击谁，给谁加下划线</h2><blockquote>
-<p>首先为组件绑定<code>Click事件</code></p>
-</blockquote>
-<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&lt;view 
-class="scrool-item" 
-v-for="(item,index) in topBar" 
-:key="index"
-@click="changeTab(index)"
-&gt;
-  &lt;text :class="topBarIndex===index?'f-active-color':'f-color'"&gt;{{item.name}}&lt;/text&gt;
-&lt;/view&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">swiper</span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 400rpx<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.swiper-img</span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 400rpx<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <blockquote>
-<p>在<code>data</code>中定义变量</p>
+<p>加入这个代码后我们发现，图片已经可以正常显示了！</p>
 </blockquote>
-<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">data() {
-  return {
-    // 选中的索引
-    topBarIndex: 0
-   		 }
-    }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>完整的indexSwiper组件代码：</strong></p>
+<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&lt;template&gt;
+  &lt;swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000"&gt;
+    &lt;swiper-item&gt;
+      &lt;view class="swiper-item"&gt;
+        &lt;image class="swiper-img" src="../../static/img/swiper1.jpg" mode=""&gt;&lt;/image&gt;
+      &lt;/view&gt;
+    &lt;/swiper-item&gt;
+    &lt;swiper-item&gt;
+      &lt;view class="swiper-item"&gt;
+        &lt;image class="swiper-img"  src="../../static/img/swiper2.jpg" alt=""&gt;&lt;/image&gt;
+      &lt;/view&gt;
+    &lt;/swiper-item&gt;  &lt;swiper-item&gt;
+      &lt;view class="swiper-item"&gt;
+        &lt;image class="swiper-img"  src="../../static/img/swiper3.jpg" alt=""&gt;&lt;/image&gt;
+      &lt;/view&gt;
+    &lt;/swiper-item&gt;
+  &lt;/swiper&gt;
+&lt;/template&gt;
 
-<blockquote>
-<p>在事件中编写点击后获取当前的index值</p>
-</blockquote>
-<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">methods: {
-  changeTab(index) {
-       if(this.topBarIndex === index){
-          return;
-        }
-        this.topBarIndex = index
+&lt;script&gt;
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+  swiper{
+    width: 100%;
+    height: 400rpx;
   }
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+  .swiper-img{
+    width: 100%;
+    height: 400rpx;
+  }
+&lt;/style&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="3-顶栏滑动跟随-—-gt-scroll-into-view"><a href="#3-顶栏滑动跟随-—-gt-scroll-into-view" class="headerlink" title="3.顶栏滑动跟随 —> scroll-into-view"></a>3.顶栏滑动跟随 —&gt; scroll-into-view</h2><table>
+<h2 id="2-手机和小程序高度获取不一致问题已解决"><a href="#2-手机和小程序高度获取不一致问题已解决" class="headerlink" title="2.手机和小程序高度获取不一致问题已解决"></a>2.手机和小程序高度获取不一致问题<code>已解决</code></h2><blockquote>
+<p>封装一个函数用来以适应获取各种设备的上间距</p>
+<table>
 <thead>
 <tr>
-<th>scroll-into-view</th>
-<th>String</th>
-<th>值应为某子元素id（id不能以数字开头）设置哪个方向可滚动，则在哪个方向滚动到该元素</th>
+<th>函数</th>
+<th>作用</th>
 </tr>
 </thead>
-</table>
-<h5 id="1-添加属性"><a href="#1-添加属性" class="headerlink" title="1.添加属性"></a>1.添加属性</h5><blockquote>
-<p>为滚动条组件<code>scroll-view </code>添加这个属性，然后为<code>子组件</code>添加<code> id</code></p>
-<p><strong>注意</strong>：<code>id必须以字母开头</code></p>
+<tbody><tr>
+<td>res.platform</td>
+<td>用来获取当前使用的设备</td>
+</tr>
+<tr>
+<td>res.statusBarHeight</td>
+<td>用来获取手机状态栏的高度</td>
+</tr>
+</tbody></table>
 </blockquote>
-<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&lt;scroll-view 
-    scroll-x="true" 
-    class="scrool-content" 
-    :scroll-into-view="scrollIntoIndex"
-&gt;
-  &lt;view 
-        :id="'top'+index" 
-        class="scrool-item" 
-        v-for="(item,index) in topBar" 
-        :key="index" 
-        @click="changeTab(index)"
-&gt;
-    &lt;text 
-       :class="topBarIndex===index?'f-active-color':'f-color'"
-    &gt;
-        {{item.name}}
-    &lt;/text&gt;
-  &lt;/view&gt;
-&lt;/scroll-view&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><code>getClientHeight()</code>这个函数会返回最上方状态栏和tabBar的高</p>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">// 获取可视区域高度[兼容]</span>
+<span class="token function">getClientHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> res <span class="token operator">=</span> uni<span class="token punctuation">.</span><span class="token function">getSystemInfoSync</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token keyword">const</span> system <span class="token operator">=</span> res<span class="token punctuation">.</span>platform<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>system <span class="token operator">===</span> <span class="token string">'ios'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token number">44</span> <span class="token operator">+</span> res<span class="token punctuation">.</span>statusBarHeight
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>system <span class="token operator">===</span> <span class="token string">'android'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token number">48</span> <span class="token operator">+</span> res<span class="token punctuation">.</span>statusBarHeight
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h5 id="2-添加变量"><a href="#2-添加变量" class="headerlink" title="2.添加变量"></a>2.添加变量</h5><pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">data() {
-  return {
-    // 页面刚加载时topBar宣誓为哪一个索引
-    scrollIntoIndex: 'top0'
-   		}
-    }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h5 id="3-添加事件"><a href="#3-添加事件" class="headerlink" title="3.添加事件"></a>3.添加事件</h5><pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">methods: {
-  changeTab(index) {
-	// 如果重复选中该组件，不请求数据
-    if (this.topBarIndex === index) {
-      return;
-    }
-	//点击时改变索引
-    this.topBarIndex = index;
-	//设置滚动跟随的索引
-    this.scrollIntoIndex = 'top' + index;
-  },
-  onChangeTab(e) {
-	//下方切换使用的轮播图，TabBar变化时swiper也变化
-    this.topBarIndex = e.detail.current;
-	//改变swiper时，也会让TabBar滚动跟随索引生效  
-    this.scrollIntoIndex = 'top' + e.detail.current;
-  }
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="4-解决整个swiper默认高度导致页面展示不全"><a href="#4-解决整个swiper默认高度导致页面展示不全" class="headerlink" title="4.解决整个swiper默认高度导致页面展示不全"></a>4.解决整个swiper默认高度导致页面展示不全</h2><blockquote>
-<p>在<code>onReady()</code>阶段利用这个 <code>uni.createSelectorQuery().select('.home-data')</code> 来获取<code>home-data</code>中的元素信息，取出其中的<code>height</code>来调用给父轮播图.</p>
-</blockquote>
-<ul>
-<li><h4 id="this-clentHeight为自己定义的变量"><a href="#this-clentHeight为自己定义的变量" class="headerlink" title="this.clentHeight为自己定义的变量"></a>this.clentHeight为自己定义的变量</h4></li>
-</ul>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-<span class="token keyword">return</span> <span class="token punctuation">{</span>
- <span class="token comment">// 内容块的高度值</span>
- clentHeight<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
- 	<span class="token punctuation">}</span>
- <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<ul>
-<li>定义方法来获取到组件的高</li>
-</ul>
+<p>最后将整个窗体的高减去对应的高即可</p>
 <pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token function">onReady</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">let</span> view <span class="token operator">=</span> uni<span class="token punctuation">.</span><span class="token function">createSelectorQuery</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">'.home-data'</span><span class="token punctuation">)</span>
-  view<span class="token punctuation">.</span><span class="token function">boundingClientRect</span><span class="token punctuation">(</span><span class="token parameter">data</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>clentHeight <span class="token operator">=</span> data<span class="token punctuation">.</span>height<span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+  uni<span class="token punctuation">.</span><span class="token function">getSystemInfo</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token comment">// console.log(res.windowHeight);</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>clentHeight <span class="token operator">=</span> res<span class="token punctuation">.</span>windowHeight <span class="token operator">-</span> uni<span class="token punctuation">.</span><span class="token function">upx2px</span><span class="token punctuation">(</span><span class="token number">80</span><span class="token punctuation">)</span><span class="token operator">-</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getClientHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<ul>
-<li>添加给元素</li>
-</ul>
-<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&lt;swiper @change="onChangeTab" :current="topBarIndex" :style="'height:'+ clentHeight +'px;'"&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h5 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h5><pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&lt;template&gt;
+  &lt;view class="content"&gt;
+    &lt;scroll-view scroll-x="true" class="scrool-content" :scroll-into-view="scrollIntoIndex"&gt;
+      &lt;view :id="'top'+index" class="scrool-item" v-for="(item,index) in topBar" :key="index" @click="changeTab(index)"&gt;
+
+        &lt;text :class="topBarIndex===index?'f-active-color':'f-color'"&gt;{{item.name}}&lt;/text&gt;
+      &lt;/view&gt;
+    &lt;/scroll-view&gt;
+
+    &lt;swiper class="main" @change="onChangeTab" :current="topBarIndex" :style="'height:'+ clentHeight +'px;'"&gt;
+      &lt;swiper-item v-for="(item,index) in newTopBar" :key="index"&gt;
+          
+      &lt;/swiper-item&gt;
+    &lt;/swiper&gt;
+  &lt;/view&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+
+  export default {
+    data() {
+      return {
+        // 选中的索引
+        topBarIndex: 0,
+        // 页面刚加载时topBar宣誓为哪一个索引
+        scrollIntoIndex: 'top0',
+        // 内容块的高度值
+        clentHeight: 0,
+        // 顶栏数据
+        topBar: [],
+        // 承载数据
+        newTopBar: []
+      }
+    },
+    onLoad() {
+      this.__init()
+    },
+    onReady() {
+      uni.getSystemInfo({
+        success: (res) =&gt; {
+          // console.log(res.windowHeight);
+          this.clentHeight = res.windowHeight - uni.upx2px(80)- this.getClientHeight()
+        }
+      })
+    },
+    methods: {
+      // 请求首页数据
+      __init() {
+        uni.request({
+          url: "http://192.168.8.102:3000/api/index_list/data",
+          success: (res) =&gt; {
+            let data = res.data.data;
+            this.topBar = data.topBar
+            this.newTopBar = this.initData(data)
+          }
+        })
+      },
+      // 添加数据
+      initData(res) {
+        let arr = []
+        for (let i = 0; i &lt; this.topBar.length; i++) {
+          let obj = {
+            data: []
+          }
+          // 获取首次数据
+          if (i == 0) {
+            obj.data = res.data;
+          }
+          arr.push(obj)
+        }
+        return arr;
+      },
+      // 点击顶栏
+      changeTab(index) {
+        if (this.topBarIndex === index) {
+          return;
+        }
+        this.topBarIndex = index;
+        this.scrollIntoIndex = 'top' + index;
+      },
+      // 轮播图对应滑动
+      onChangeTab(e) {
+        this.topBarIndex = e.detail.current;
+        this.scrollIntoIndex = 'top' + e.detail.current;
+      },
+      // 获取可视区域高度[兼容]
+      getClientHeight() {
+        const res = uni.getSystemInfoSync()
+        const system = res.platform;
+        if (system === 'ios') {
+          return 44 + res.statusBarHeight
+        } else if (system === 'android') {
+          return 48 + res.statusBarHeight
+        } else {
+          return 0;
+        }
+      }
+    }
+  }
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+  .main{
+    background-color: red;
+  }
+  .scrool-content {
+    width: 100%;
+    height: 88rpx;
+    white-space: nowrap;
+  }
+
+  .scrool-item {
+    display: inline-block;
+    padding: 10rpx 30rpx;
+    font-size: 32rpx
+  }
+
+  .f-active-color {
+    padding: 10rpx 0;
+    border-bottom: 6rpx solid #49BDFB;
+
+  }
+&lt;/style&gt;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                 
@@ -851,7 +966,7 @@ v-for="(item,index) in topBar"
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://shixindea.github.io/2022/06/03/uni-app-dai-ma-pian-duan/">https://shixindea.github.io/2022/06/03/uni-app-dai-ma-pian-duan/</a>
+                    <a href="https://shixindea.github.io/2022/05/20/uni-app-bao-cuo-jie-jue/">https://shixindea.github.io/2022/05/20/uni-app-bao-cuo-jie-jue/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -888,7 +1003,11 @@ v-for="(item,index) in topBar"
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/Uni-app/">
+                                    <span class="chip bg-color">Uni-app</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1362,32 +1481,43 @@ new Valine({
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/06/03/uni-app-bao-cuo-jie-jue/">
+                <a href="/2022/05/20/uni-app-dai-ma-pian-duan/">
                     <div class="card-image">
                         
+                        <img src="/medias/banner/9.jpg" class="responsive-img" alt="Uni-app代码片段">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg" class="responsive-img" alt="">
-                        
-                        <span class="card-title"></span>
+                        <span class="card-title">Uni-app代码片段</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Uni-app代码片段
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-06-03
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-20
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Guoguo
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/" class="post-category">
+                                    前端篇
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Uni-app/">
+                        <span class="chip bg-color">Uni-app</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1399,32 +1529,43 @@ new Valine({
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/06/03/uni-app-shang-cheng-kai-fa/">
+                <a href="/2022/05/20/uni-app-bi-ji/">
                     <div class="card-image">
                         
+                        <img src="/medias/banner/7.jpg" class="responsive-img" alt="Uni-app笔记">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928021815.jpg" class="responsive-img" alt="">
-                        
-                        <span class="card-title"></span>
+                        <span class="card-title">Uni-app笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Uni-app笔记
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-20
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Guoguo
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/" class="post-category">
+                                    前端篇
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Uni-app/">
+                        <span class="chip bg-color">Uni-app</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1662,7 +1803,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">13.8k</span>&nbsp;字
+                class="white-color">14.2k</span>&nbsp;字
             
             
             
