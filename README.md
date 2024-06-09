@@ -1,7 +1,7 @@
 <div align="center">
   <img src="http://mzlui.codeym.com/assets/logo.35ebc5f4.png" width="100"/>
   <h1 style="border-bottom:0">
-    <p>mzl-ui组件库</p>
+    <p>guoguo-ui组件库</p>
     <p style="font-size:20px">一套适合开发者使用的轻量级UI组件库，完美支持vue3</p>
   </h1>
 </div>
@@ -9,19 +9,19 @@
 
 
 
-官网主页: [mzl-ui使用文档](https://mzlui.codeym.com/)
+官网主页: [guoguo-ui使用文档](https://mzlui.codeym.com/)
 ***
 ### 快速使用
 ```
-npm install  mzl-ui --save
-cnpm install  mzl-ui --save
+npm install  guoguo-ui --save
+cnpm install  guoguo-ui --save
 ```
 ### 引入
 ```
 import { createApp } from 'vue'
 import App from '@/App.vue'
-import mzlUi from 'mzl-ui'
-import '../node_modules/mzl-ui/dist/style.css'
+import mzlUi from 'guoguo-ui'
+import '../node_modules/guoguo-ui/dist/style.css'
 
 const app = createApp(App)
 app.use(mzlUi)
@@ -29,7 +29,7 @@ app.mount('#app')
 ```
 ### 按需引用
 ```
-import { mButton, mInput } from 'mzl-ui'
+import { mButton, mInput } from 'guoguo-ui'
 ```
 ### 愉快开始
 ```
@@ -37,9 +37,9 @@ import { mButton, mInput } from 'mzl-ui'
 <m-button type="primary">主要按钮</m-button>
 ```
 
-## Mzl UI 贡献指南
+## GuoGuo UI 贡献指南
 
-首先非常感谢您能选择使用 mzl-ui。mzl-ui 是基于 vue3.2 开发，mzl-ui 旨在秉承数据驱动视图，力求更小的体积、更快的相应、更强的拓展性、更完美的支持、更友好的渲染。任何一个开源库都离不开大家的共同贡献和维护，如果您愿意参与贡献，请阅读以下内容。
+首先非常感谢您能选择使用 guoguo-ui。guoguo-ui 是基于 vue3.2 开发，guoguo-ui 旨在秉承数据驱动视图，力求更小的体积、更快的相应、更强的拓展性、更完美的支持、更友好的渲染。任何一个开源库都离不开大家的共同贡献和维护，如果您愿意参与贡献，请阅读以下内容。
 
 ### 问题反馈
 
@@ -101,7 +101,7 @@ import { mButton, mInput } from 'mzl-ui'
 ### Issue 规范
 
 -  在提交 *issue* 之前，请搜索相关内容是否已被提出。
--  请说明 *mzl-ui* 和 *Vue* 的版本号，并提供操作系统和浏览器信息。推荐使用 *JSFiddle* 生成在线 *demo*，这能够更直观地重现问题。
+-  请说明 *guoguo-ui* 和 *Vue* 的版本号，并提供操作系统和浏览器信息。推荐使用 *JSFiddle* 生成在线 *demo*，这能够更直观地重现问题。
 
 ### Pull Request 规范
 

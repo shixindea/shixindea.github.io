@@ -1,23 +1,23 @@
 {
-  "name": "mzl-ui",
+  "name": "guoguo-ui",
   "author": "style'me",
-  "version": "0.8.8",
+  "version": "0.8.9",
   "private": false,
-  "main": "./dist/mzl-ui.umd.js",
-  "module": "./dist/mzl-ui.es.js",
+  "main": "./dist/guoguo-ui.umd.js",
+  "module": "./dist/guoguo-ui.es.js",
   "exports": {
     ".": {
-      "import": "./dist/mzl-ui.es.js",
-      "require": "./dist/mzl-ui.umd.js"
+      "import": "./dist/guoguo-ui.es.js",
+      "require": "./dist/guoguo-ui.umd.js"
     }
   },
-  "description": "mzl-ui",
+  "description": "guoguo-ui",
   "keywords": [
     "vue",
     "vue3",
     "vuejs",
     "vite",
-    "mzl-ui",
+    "guoguo-ui",
     "ui",
     "vueui",
     "vertical",
@@ -33,14 +33,14 @@
   "homepage": "https://mzlui.codeym.com/",
   "bugs": {
     "url": "https://mzlui.codeym.com/",
-    "email": "1046674804@qq.com"
+    "email": "2914310412@qq.com"
   },
   "scripts": {
     "dev": "vite --port 3002",
     "build": "vite build",
     "build:html": "vite build --config ./build/build.js",
     "preview": "vite preview",
-    "mzl-ui": "vite build",
+    "guoguo-ui": "vite build",
     "test": "jest --runInBand",
     "cz": "git-cz"
   },
