@@ -72,10 +72,14 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "node_modules/cz-git",
+      "czConfig": "node_modules/@shixinde/guoguo-cz/commitlint.config.cjs"
     }
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@shixinde/guoguo-cz": "^0.0.2"
   }
 }
