@@ -5,14 +5,14 @@
 #### 推荐使用 _npm_ 的方式安装,也可选用 _cpm_ 或 _yarn_ 进行安装。
 
 ```
-npm install  mzl-ui
-cnpm install  mzl-ui --save
-yarn add mzl-ui
+npm install  guoguo-ui
+cnpm install  guoguo-ui --save
+yarn add guoguo-ui
 ```
 
 <br/>
 
-## 使用 mzl-ui
+## 使用 guoguo-ui
 
 #### 需要注意的是 css 样式文件需要您单独引入。
 
@@ -20,11 +20,11 @@ yarn add mzl-ui
 /*js*/
 import { createApp } from "vue";
 import App from "@/App.vue";
-import mzlUi from "mzl-ui";
-import "../node_modules/mzl-ui/dist/style.css";
+import GuoGuoUI from "guoguo-ui";
+import "../node_modules/guoguo-ui/dist/style.css";
 
 const app = createApp(App);
-app.use(mzlUi);
+app.use(GuoGuoUI);
 app.mount("#app");
 ```
 
@@ -32,7 +32,7 @@ app.mount("#app");
 
 ## 愉快开始
 
-#### 至此 mzl-ui 就引入完成并且可以使用了。
+#### 至此 guoguo-ui 就引入完成并且可以使用了。
 
 ```html
 <!-- html -->
@@ -48,7 +48,7 @@ app.mount("#app");
 
 ```javascript
 /*js*/
-import { mButton, mInput } from "mzl-ui";
+import { mButton, mInput } from "guoguo-ui";
 ```
 
 <br/>

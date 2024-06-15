@@ -20,11 +20,11 @@ cnpm install  guoguo-ui --save
 ```
 import { createApp } from 'vue'
 import App from '@/App.vue'
-import mzlUi from 'guoguo-ui'
+import guoguoui from 'guoguo-ui'
 import '../node_modules/guoguo-ui/dist/style.css'
 
 const app = createApp(App)
-app.use(mzlUi)
+app.use(guoguoui)
 app.mount('#app')
 ```
 ### 按需引用

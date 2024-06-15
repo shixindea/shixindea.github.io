@@ -1,7 +1,7 @@
 {
-  "name": "guoguo-ui",
+  "name": "@shixinde/guoguo-ui",
   "author": "style'me",
-  "version": "0.8.9",
+  "version": "0.0.3",
   "private": false,
   "main": "./dist/guoguo-ui.umd.js",
   "module": "./dist/guoguo-ui.es.js",
@@ -11,7 +11,7 @@
       "require": "./dist/guoguo-ui.umd.js"
     }
   },
-  "description": "guoguo-ui",
+  "description": "袁果锅开发 基于vue3 组件库",
   "keywords": [
     "vue",
     "vue3",
@@ -36,13 +36,14 @@
     "email": "2914310412@qq.com"
   },
   "scripts": {
+    "start": "vite --port 3002",
     "dev": "vite --port 3002",
     "build": "vite build",
     "build:html": "vite build --config ./build/build.js",
     "preview": "vite preview",
     "guoguo-ui": "vite build",
     "test": "jest --runInBand",
-    "cz": "git-cz"
+    "gitcz": "git-cz"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.11",
@@ -73,5 +74,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
