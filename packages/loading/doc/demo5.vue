@@ -5,10 +5,10 @@
 
 <!-- js -->
 <script setup>
-  import Loading from "../index.js"; //此处为本地示例，请使用import { Loading } from "mzl-ui";
+  import Loading from "../index.js"; //此处为本地示例，请使用import { Loading } from "guoguo-ui";
   const openLoading = () => {
     Loading.show({
-      text:'正在加载mzl-ui...',
+      text:'正在加载guoguo-ui...',
       icon:'m-icon-loading3',
       scrollLock:true,
       textColor:'#333',

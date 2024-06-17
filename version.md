@@ -1,6 +1,11 @@
 
 # 更新日志
 
+### 0.9.0
+- 优化Space组件
+- 支持 align justifyContent style class 传参
+
+
 ### 0.8.9
 - 新增进度条组件
 - 优化表格组件

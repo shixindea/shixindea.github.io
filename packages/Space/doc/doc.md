@@ -2,6 +2,10 @@
 import demo1 from './demo1.vue'
 import demo2 from './demo2.vue'
 import demo3 from './demo3.vue'
+import demo4 from './demo4.vue'
+import demo5 from './demo5.vue'
+import demo6 from './demo6.vue'
+import demo7 from './demo7.vue'
 import Attributes from './Attributes.vue'
 import preview from '@/components/preview.vue'
 </script>
@@ -38,6 +42,46 @@ import preview from '@/components/preview.vue'
   <demo3/>
 </div>
 <preview compName="Space" demoName="demo3"/>
+
+## flex 横向对齐方式
+
+#### 通过设置 _justifyContent_ 属性，可以设置 flex 对齐方式 参考值：_flex-start_ | _flex-end_ | _center_ | _space-between_ | _space-around_
+
+<div class="componetnsBox">
+  <demo4/>
+</div>
+<preview compName="Space" demoName="demo4"/>
+
+## flex 纵向对齐方式
+
+#### 通过设置 _align_ 属性，可以设置 flex 对齐方式 参考值：_flex-start_ | _flex-end_ | _center_ | _space-between_ | _space-around_
+
+<div class="componetnsBox">
+  <demo5/>
+</div>
+<preview compName="Space" demoName="demo5"/>
+
+
+## 支持对象形式传递 _style_ 样式
+
+#### 通过设置 _style_ 属性，可以快速设置组件样式 例如：_:style="{height: '100px'}"_
+
+<div class="componetnsBox">
+  <demo6/>
+</div>
+<preview compName="Space" demoName="demo6"/>
+
+
+
+## 支持赋予 _class_ 样式
+
+#### 通过设置 _class_ 属性，可以快速设置组件样式 例如：_class="guoguo-space"_
+
+<div class="componetnsBox">
+  <demo7/>
+</div>
+<preview compName="Space" demoName="demo7"/>
+
 
 ## Attributes 参数
 

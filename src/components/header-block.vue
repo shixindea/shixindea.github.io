@@ -1,9 +1,9 @@
 <template>
   <div class="header-block-box">
     <div class="logoBox">
-      <img src="../assets/logo.png" alt="mzl-ui" @click="toHome" />
+      <img src="../assets/logo.png" alt="guoguo-ui" @click="toHome" />
       <m-badge type="primary" value="V 0.8.8">
-        <a href="javascript:;" @click="toHome">Mzl UI</a>
+        <a href="javascript:;" @click="toHome">GuoGuo UI</a>
       </m-badge>
     </div>
     <div class="toolsBox">
