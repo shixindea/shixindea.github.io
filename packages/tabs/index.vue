@@ -218,5 +218,5 @@ function handleTabClick(pane, tabName) {
       clear: both;
     }
 }
-</style>>
+</style>
 

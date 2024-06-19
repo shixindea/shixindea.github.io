@@ -5,7 +5,7 @@
 </template>
 <script>
 import { h, useSlots, ref, computed } from 'vue'
-
+import Message from '/packages/message/index.js'
 import { theColors, theSizes } from './conf'
 
 export default {
@@ -62,6 +62,7 @@ export default {
   },
   setup(props) {
     const theSlot = ref([])
+    const theClickCopyFlag = ref(true)
     const $slot = useSlots()
     const styles = computed(() => {
       return {
@@ -77,27 +78,71 @@ export default {
       }
     })
 
-    theSlot.value = props.copyable
-      ? [
-          h(
-            'span',
-            {
-              className: `g-text`,
-              style: styles.value
+    if ($slot['default'] == undefined) {
+      theSlot.value = []
+    } else if (props.copyable) {
+      const baseSlot = [
+        h(
+          'span',
+          {
+            className: `g-text`,
+            style: styles.value
+          },
+          $slot.default()
+        )
+      ]
+      const copySlot = [
+        h(
+          'span',
+          {
+            className: `m-icon-copy`,
+            style: {
+              color: 'red',
+              cursor: 'pointer',
+              'user-select': 'none',
+              'padding-left': '5px'
             },
-            $slot.default()
-          )
-        ]
-      : [
-          h(
-            'span',
-            {
-              className: `g-text`,
-              style: styles.value
-            },
-            $slot.default()
-          )
-        ]
+
+            onClick: () => {
+              navigator.clipboard.writeText($slot.default()[0].children).then(() => {
+                theSlot.value = [h('m-space', {}, [...baseSlot, ...successSlot])]
+                setTimeout(() => {
+                  theSlot.value = [h('m-space', {}, [...baseSlot, ...copySlot])]
+                }, 3000)
+              })
+            }
+          },
+          {}
+        )
+      ]
+      const successSlot = [
+        h(
+          'span',
+          {
+            className: `m-icon-select`,
+            style: {
+              color: 'red',
+              cursor: 'pointer',
+              'padding-left': '5px'
+            }
+          },
+          {}
+        )
+      ]
+
+      theSlot.value = [h('m-space', {}, [...baseSlot, ...copySlot])]
+    } else {
+      theSlot.value = [
+        h(
+          'span',
+          {
+            className: `g-text`,
+            style: styles.value
+          },
+          $slot.default()
+        )
+      ]
+    }
 
     return () => theSlot.value
   }

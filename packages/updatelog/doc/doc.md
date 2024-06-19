@@ -7,6 +7,9 @@ title: radio
 
 # 更新日志
 
+### v0.2.1
+- Text组件
+- 增加可交互组件 copyable
 
 ### v0.2.0
 - 优化Space组件

@@ -33,6 +33,20 @@ const state = reactive({
         def: 'default'
       },
       {
+        attr: 'color',
+        type: 'String',
+        red: '快速设置字体颜色\nred #ff0000 rgba(255,0,0,1)',
+        sel: '1,2,3,4,5,small,default,large',
+        def: 'default'
+      },
+      {
+        attr: 'copyable',
+        type: 'Boolean',
+        red: '可复制内容，若有多个元素，则只复制第一个元素',
+        sel: 'true / false',
+        def: 'false'
+      },
+      {
         attr: 'disabled',
         type: 'Boolean',
         red: '是否禁用不可操作',
@@ -87,13 +101,6 @@ const state = reactive({
         red: '设置为DIN-Medium字体,主要针对数字显示',
         sel: 'true / false',
         def: 'false'
-      },
-      {
-        attr: 'inline',
-        type: 'Boolean',
-        red: '是否为水平或者垂直，默认横向',
-        sel: 'true / false',
-        def: 'true'
       }
     ]
   }
