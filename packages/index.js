@@ -32,6 +32,7 @@ import mColorPicker from './colorPicker/index'
 import mBreadcrumb from './breadcrumb/index'
 import mBadge from './badge/index'
 import mDivider from './divider/index'
+import gText from './Text/index'
 //存在所有组件
 const components = [
   mButton,
@@ -62,7 +63,9 @@ const components = [
   mColorPicker,
   mBreadcrumb,
   mBadge,
-  mDivider
+  mDivider,
+  gText,
+
 ];
 const install = (app) => {
   components.forEach((i) => {
@@ -117,6 +120,7 @@ export {
   mColorPicker,
   mBreadcrumb,
   mBadge,
-  mDivider
+  mDivider,
+  gText
 }
 export default mzlUi

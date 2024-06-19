@@ -1,7 +1,46 @@
 $primary: #0e80eb;
-$info: #505050;
+$info: rgba(0, 0, 0, 0.45);
+$gray: rgba(0, 0, 0, 0.45);
 $success: #09b63d;
 $warn: #f57b29;
 $danger: #ec3437;
 $boder: #f0f0f0;
 $shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+$default: rgba(0, 0, 0, 0.85);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// --ant-primary-color: ${theMainColor};
+// --ant-text-color: rgba(0, 0, 0, 0.85);
+// --ant-text-color-secondary: rgba(0, 0, 0, 0.45);--ant-background-popover:#fff;--ant-border-color:#d9d9d9;--ant-disabled-bg: hsv(0, 0, 96%);
+// --ant-disabled-color: rgba(0,0,0,0.25);--bg: ${theLightBg};--bg-core: #fff; --color-border: rgba(0, 0, 0, 0.06);
+
+// $main: @primary-color;
+// $main-bg: @primary-color - bg;
+// $bg: var(--bg, #f5f7fa);
+// $bg-core: var(--bg - core, #fff);
+// $bg-dark: var(--bg, #202124);
+// $bg-dark - core: var(--bg - core, #202124);
+// $color-border: var(--color - border, rgba(0, 0, 0, 0.06));
+// $color: var(--ant - text - color, rgba(0, 0, 0, 0.85));
+// $color-desc: var(--ant - text - color - secondary, rgba(0, 0, 0, 0.45));
+// $color-disabled: var(--ant - disabled - color, rgba(0, 0, 0, 0.25));

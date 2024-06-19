@@ -60,6 +60,11 @@ export default [
         component: () => import('/packages/Space/doc/doc.md')
       },
       {
+        path: 'Text',
+        name: 'Text 文本',
+        component: () => import('/packages/Text/doc/doc.md')
+      },
+      {
         path: 'select',
         name: 'Select 下拉框',
         component: () => import('/packages/select/doc/doc.md')

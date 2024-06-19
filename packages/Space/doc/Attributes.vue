@@ -55,6 +55,20 @@ const state = reactive({
         red: '可以快速设置组件样式',
         sel: '——',
         def: '——'
+      },
+      {
+        attr: 'widthFill',
+        type: 'Boolean',
+        red: '设置当前盒子是否增加 width: 100%，默认为自适应大小fit-content',
+        sel: 'true / false',
+        def: 'false'
+      },
+      {
+        attr: 'innerWidthFill',
+        type: 'Boolean',
+        red: '设置当前盒子的子元素是否增加 width: 100%，默认为自适应大小fit-content',
+        sel: 'true / false',
+        def: 'false'
       }
     ]
   }

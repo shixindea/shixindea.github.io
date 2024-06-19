@@ -39,6 +39,14 @@ export default {
     style: {
       type: Object,
       default: () => {}
+    },
+    widthFill: {
+      type: Boolean,
+      default: false
+    },
+    innerWidthFill: {
+      type: Boolean,
+      default: false
     }
   },
   setup(props) {
@@ -52,10 +60,11 @@ export default {
         'flex-direction': props.inline ? 'inherit' : 'column',
         'flex-wrap': 'wrap',
         margin: `${props.size[0] / 2}px 0px`,
-        width: props.inline ? '100%' : 'fit-content',
+        width: props.inline || props.widthFill ? '100%' : 'fit-content',
         'justify-content': props.justifyContent,
         'align-items': props.align,
         align: props.align,
+
         ...props.style
       }
     })
@@ -69,7 +78,7 @@ export default {
           'div',
           {
             className: `m-space-item${index}`,
-            style: 'width:fit-content'
+            style: `width:${props.innerWidthFill ? '100%' : 'fit-content'}`
           },
           item
         )

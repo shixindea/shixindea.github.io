@@ -6,6 +6,7 @@ import demo4 from './demo4.vue'
 import demo5 from './demo5.vue'
 import demo6 from './demo6.vue'
 import demo7 from './demo7.vue'
+import demo8 from './demo8.vue'
 import Attributes from './Attributes.vue'
 import preview from '@/components/preview.vue'
 </script>
@@ -61,7 +62,6 @@ import preview from '@/components/preview.vue'
 </div>
 <preview compName="Space" demoName="demo5"/>
 
-
 ## 支持对象形式传递 _style_ 样式
 
 #### 通过设置 _style_ 属性，可以快速设置组件样式 例如：_:style="{height: '100px'}"_
@@ -70,8 +70,6 @@ import preview from '@/components/preview.vue'
   <demo6/>
 </div>
 <preview compName="Space" demoName="demo6"/>
-
-
 
 ## 支持赋予 _class_ 样式
 
@@ -82,6 +80,14 @@ import preview from '@/components/preview.vue'
 </div>
 <preview compName="Space" demoName="demo7"/>
 
+## 快速设置宽度样式
+
+#### 通过设置 _widthFill_ 属性，可以快速设置宽度 width:100%
+
+<div class="componetnsBox">
+  <demo8/>
+</div>
+<preview compName="Space" demoName="demo8"/>
 
 ## Attributes 参数
 

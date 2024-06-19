@@ -65,6 +65,11 @@ export default [
         path: '/mzlui/Space'
       },
       {
+        'title-cn': 'Text 文本',
+        'title-en': 'Text',
+        path: '/mzlui/Text'
+      },
+      {
         'title-cn': 'Select 下拉框',
         'title-en': 'Select',
         path: '/mzlui/select'
@@ -156,7 +161,7 @@ export default [
       }
     ]
   },
-    {
+  {
     'title-cn': '其他',
     'title-en': 'other',
     list: [
