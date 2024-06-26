@@ -1,10 +1,10 @@
 <!-- html -->
 <template>
-  <m-space :inline="false">
+  <g-space :inline="false">
     <m-radio v-model="radioVal" :options="radioOptions"></m-radio>
     <m-radio v-model="radioVal" :options="radioOptions" size="small"></m-radio>
     <m-radio v-model="radioVal" :options="radioOptions" size="mini"></m-radio>
-  </m-space>
+  </g-space>
 </template>
 
 <!-- js -->

@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-space :inline="false">
+  <g-space :inline="false">
     <m-checkbox
       v-model="checkboxVal"
       :options="checkOptions"
@@ -11,7 +11,7 @@
       :options="checkOptions"
       customColor="#25B0F8"
     ></m-checkbox>
-  </m-space>
+  </g-space>
 </template>
 
 <!-- js -->

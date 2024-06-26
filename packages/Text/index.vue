@@ -105,9 +105,9 @@ export default {
 
             onClick: () => {
               navigator.clipboard.writeText($slot.default()[0].children).then(() => {
-                theSlot.value = [h('m-space', {}, [...baseSlot, ...successSlot])]
+                theSlot.value = [h('g-space', {}, [...baseSlot, ...successSlot])]
                 setTimeout(() => {
-                  theSlot.value = [h('m-space', {}, [...baseSlot, ...copySlot])]
+                  theSlot.value = [h('g-space', {}, [...baseSlot, ...copySlot])]
                 }, 3000)
               })
             }
@@ -130,7 +130,7 @@ export default {
         )
       ]
 
-      theSlot.value = [h('m-space', {}, [...baseSlot, ...copySlot])]
+      theSlot.value = [h('g-space', {}, [...baseSlot, ...copySlot])]
     } else {
       theSlot.value = [
         h(

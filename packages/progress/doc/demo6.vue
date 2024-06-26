@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-space>
+  <g-space>
     <m-progress
       :percent="20"
       progressType="circle"
@@ -41,7 +41,7 @@
       isShowText
     >
     </m-progress>
-  </m-space>
+  </g-space>
 </template>
 <style scoped>
 .mzl-progress {

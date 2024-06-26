@@ -155,6 +155,11 @@ export default [
         component: () => import('/packages/drawer/doc/doc.md')
       },
       {
+        path: 'tooltip',
+        name: 'Tooltip 提示',
+        component: () => import('/packages/Tooltip/doc/doc.md')
+      },
+      {
         path: 'loading',
         name: 'Loading 加载中',
         component: () => import('/packages/loading/doc/doc.md')

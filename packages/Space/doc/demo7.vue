@@ -1,10 +1,10 @@
 <!-- html -->
 <template>
-  <m-space class="guoguo-space" inline >
+  <g-space class="guoguo-space" inline >
     <m-button>按钮</m-button>
     <m-button>按钮</m-button>
     <m-button>按钮</m-button>
-  </m-space>
+  </g-space>
 </template>
 
 <style>

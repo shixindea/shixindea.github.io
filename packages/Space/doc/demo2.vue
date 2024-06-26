@@ -1,11 +1,11 @@
 <!-- html -->
 <template>
-  <m-space :inline="false">
+  <g-space :inline="false">
     <m-button>按钮</m-button>
     <m-button>按钮</m-button>
     <m-button>按钮</m-button>
     <m-button>按钮</m-button>
     <m-button>按钮</m-button>
     <m-button>按钮</m-button>
-  </m-space>
+  </g-space>
 </template>

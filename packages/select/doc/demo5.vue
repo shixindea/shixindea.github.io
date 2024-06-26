@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-space>
+  <g-space>
     <m-select
       v-model="selVal1"
       placeholder="默认大小"
@@ -18,7 +18,7 @@
       :options="selOptions"
       size="mini"
     ></m-select>
-  </m-space>
+  </g-space>
 </template>
 
 <!-- js -->

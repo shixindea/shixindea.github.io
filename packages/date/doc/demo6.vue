@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-space>
+  <g-space>
     <m-date
       v-model="dateVal"
       placeholder="请选择日期"
@@ -16,7 +16,7 @@
       placeholder="请选择日期"
       format="yyyy-MM-dd"
     ></m-date>
-  </m-space>
+  </g-space>
 </template>
 
 <!-- js -->

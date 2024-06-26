@@ -2,7 +2,7 @@
 <template>
   <m-popover class="space" trigger="hover" placement="top-start" content="hover激活">
     <template #reference>
-      <m-button size="medium">hover激活</m-button>
+      <m-button size="medium">hover激活hover激活hover激活hover激活hover激活hover激活hover激活hover激活hover激活hover激活hover激活</m-button>
     </template>
   </m-popover>
   <m-popover class="space" trigger="click" placement="bottom" content="click激活"  title="标题">

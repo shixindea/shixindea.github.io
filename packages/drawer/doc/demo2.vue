@@ -1,11 +1,11 @@
 <!-- html -->
 <template>
-  <m-space>
+  <g-space>
     <m-button @click="openDrawerOfLeft">左边-left</m-button>
     <m-button @click="openDrawerOfTop">上边-top</m-button>
     <m-button @click="openDrawerOfRight">右边-right</m-button>
     <m-button @click="openDrawerOfBottom">下边-bottom</m-button>
-  </m-space>
+  </g-space>
 
   <m-drawer v-model="drawerShow1" title="左边出现的抽屉">
     <template #content>

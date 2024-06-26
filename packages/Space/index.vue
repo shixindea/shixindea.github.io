@@ -1,12 +1,12 @@
 <template>
-  <div class="m-space" ref="spaceRef">
+  <div class="g-space" ref="spaceRef">
     <!-- <slot></slot> -->
   </div>
 </template>
 <script>
 import { h, useSlots, ref, computed } from 'vue'
 export default {
-  name: 'mSpace',
+  name: 'gSpace',
   props: {
     inline: {
       type: Boolean,
@@ -57,7 +57,7 @@ export default {
       return {
         display: props.inline ? 'inline-flex' : 'flex',
         gap: props.size.length == 2 ? `${props.size[0]}px ${props.size[1]}px` : `${props.size[0]}px`,
-        'flex-direction': props.inline ? 'inherit' : 'column',
+        'flex-direction': !props.inline ? 'column' : '',
         'flex-wrap': 'wrap',
         margin: `${props.size[0] / 2}px 0px`,
         width: props.inline || props.widthFill ? '100%' : 'fit-content',
@@ -73,22 +73,22 @@ export default {
     //   arr.length - 1 == index ? 0 : props.size
     // }px`,
     $slot.default().forEach((item, index, arr) => {
-      slotList.value.push(
-        h(
-          'div',
-          {
-            className: `m-space-item${index}`,
-            style: `width:${props.innerWidthFill ? '100%' : 'fit-content'}`
-          },
-          item
-        )
+      slotList.value.push(item
+        // h(
+        //   'div',
+        //   {
+        //     className: `g-space-item${index}`,
+        //     style: `width:${props.innerWidthFill ? '100%' : 'fit-content'}`
+        //   },
+        //   item
+        // )
       )
     })
     return () => [
       h(
         'div',
         {
-          className: `m-space-box ${props.class}`,
+          className: `g-space-box ${props.class}`,
           style: styles.value
         },
         slotList.value

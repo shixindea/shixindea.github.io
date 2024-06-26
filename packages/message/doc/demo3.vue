@@ -1,12 +1,12 @@
 <!-- html -->
 <template>
-  <m-space>
+  <g-space>
     <m-button @click="openInfo">文本状态</m-button>
     <m-button @click="openSuccess">成功状态</m-button>
     <m-button @click="openWarn">警告状态</m-button>
     <m-button @click="openError">错误状态</m-button>
     <m-button @click="openCustom">自定义</m-button>
-  </m-space>
+  </g-space>
 </template>
 
 <!-- js -->

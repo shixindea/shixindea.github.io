@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-space>
+  <g-space>
     <m-dropdown title="默认大小" :options="dorpoptions"></m-dropdown>
     <m-dropdown
       title="小一点的"
@@ -12,7 +12,7 @@
       :options="dorpoptions"
       size="mini"
     ></m-dropdown>
-  </m-space>
+  </g-space>
 </template>
 
 <!-- js -->

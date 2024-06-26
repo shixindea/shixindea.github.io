@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-space>
+  <g-space>
     <m-button disabled>默认按钮</m-button>
     <m-button type="primary" disabled>主要按钮</m-button>
     <m-button type="success" disabled>成功按钮</m-button>
@@ -8,8 +8,8 @@
     <m-button type="warning" disabled>警告按钮</m-button>
     <m-button type="dashed" disabled>虚线按钮</m-button>
     <m-button type="text" disabled>文本按钮</m-button>
-  </m-space>
-  <m-space>
+  </g-space>
+  <g-space>
     <m-button round disabled>默认按钮</m-button>
     <m-button type="primary" round disabled>主要按钮</m-button>
     <m-button type="success" round disabled>成功按钮</m-button>
@@ -17,5 +17,5 @@
     <m-button type="warning" round disabled>警告按钮</m-button>
     <m-button type="dashed" round disabled>虚线按钮</m-button>
     <m-button type="text" round disabled>文本按钮</m-button>
-  </m-space>
+  </g-space>
 </template>

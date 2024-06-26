@@ -1,10 +1,10 @@
 <!-- html -->
 <template>
-  <m-space>
+  <g-space>
     <m-date v-model="dateVal" placeholder="请选择日期"> </m-date>
     <m-date v-model="dateVal" placeholder="请选择日期" size="small"> </m-date>
     <m-date v-model="dateVal" placeholder="请选择日期" size="mini"> </m-date>
-  </m-space>
+  </g-space>
 </template>
 
 <!-- js -->

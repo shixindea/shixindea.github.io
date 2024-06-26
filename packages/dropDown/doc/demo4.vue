@@ -1,13 +1,13 @@
 <!-- html -->
 <template>
-  <m-space>
+  <g-space>
     <m-dropdown title="hover唤醒" :options="dorpoptions"></m-dropdown>
     <m-dropdown
       title="click唤醒"
       :options="dorpoptions"
       trigger="click"
     ></m-dropdown>
-  </m-space>
+  </g-space>
 </template>
 
 <!-- js -->

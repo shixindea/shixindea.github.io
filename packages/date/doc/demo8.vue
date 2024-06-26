@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-space>
+  <g-space>
     <m-date
       v-model="dateVal"
       placeholder="请选择日期"
@@ -14,7 +14,7 @@
       customActiveColor="#f57b29"
     >
     </m-date>
-  </m-space>
+  </g-space>
 </template>
 
 <!-- js -->

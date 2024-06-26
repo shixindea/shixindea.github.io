@@ -1,9 +1,9 @@
 <!-- html -->
 <template>
-  <m-space>
+  <g-space>
     <m-button @click="openMsg">消息提示</m-button>
     <m-button @click="openVNodeMsg">消息提示(VNode)</m-button>
-  </m-space>
+  </g-space>
 </template>
 
 <!-- js -->

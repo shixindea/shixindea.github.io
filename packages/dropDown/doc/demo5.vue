@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-space>
+  <g-space>
     <m-dropdown title="下拉菜单" :options="dorpoptions">
       <template #Img>
         <img src="https://mzlui.codeym.com/head.png" alt="" />
@@ -28,7 +28,7 @@
         <img src="https://mzlui.codeym.com/head.png" alt="" />
       </template>
     </m-dropdown>
-  </m-space>
+  </g-space>
 </template>
 
 <!-- js -->

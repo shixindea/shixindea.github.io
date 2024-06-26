@@ -138,6 +138,7 @@ export default [
         'title-en': 'Popover',
         path: '/mzlui/popover'
       },
+
       {
         'title-cn': 'Confirm 消息确认',
         'title-en': 'confirm',
@@ -148,6 +149,11 @@ export default [
         'title-cn': 'Drawer 抽屉',
         'title-en': 'drawer',
         path: '/mzlui/drawer'
+      },
+      {
+        'title-cn': 'Tooltip 提示',
+        'title-en': 'Tooltip',
+        path: '/mzlui/Tooltip'
       },
       {
         'title-cn': 'Loading 加载中',

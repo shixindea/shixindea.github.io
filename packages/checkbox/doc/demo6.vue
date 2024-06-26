@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-space :inline="false">
+  <g-space :inline="false">
     <m-checkbox v-model="checkboxVal" :options="checkOptions"></m-checkbox>
     <m-checkbox
       v-model="checkboxVal"
@@ -12,7 +12,7 @@
       :options="checkOptions"
       size="mini"
     ></m-checkbox>
-  </m-space>
+  </g-space>
 </template>
 
 <!-- js -->

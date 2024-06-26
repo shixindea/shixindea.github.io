@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <m-space :inline="false" :size="[20]" widthFill innerWidthFill>
+  <g-space :inline="false" :size="[20]" widthFill innerWidthFill>
     <g-text>GuoguoUI (default)</g-text>
     <g-text type="gray">GuoguoUI (gray)</g-text>
     <g-text type="primary">GuoguoUI (primary)</g-text>
@@ -16,5 +16,5 @@
     <g-text noSelect>GuoguoUI 隐藏光标(noSelect)</g-text>
     <g-text number> GuoguoUI 设置为DIN-Medium字体主要针对数字显示0123456789 (number) </g-text>
     <g-link link> GuoguoUI (Link) </g-link>
-  </m-space>
+  </g-space>
 </template>
