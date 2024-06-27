@@ -40,6 +40,7 @@
     "dev": "vite --port 3002",
     "build": "vite build",
     "build:html": "vite build --config ./build/build.js",
+    "build:doc": "vite build --config ./build/build.js",
     "preview": "vite preview",
     "guoguo-ui": "vite build",
     "test": "jest --runInBand",
