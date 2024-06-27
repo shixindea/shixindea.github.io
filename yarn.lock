@@ -2562,6 +2562,11 @@ cz-conventional-changelog@^3.3.0, cz-conventional-changelog@3.3.0:
   optionalDependencies:
     "@commitlint/load" ">6.1.1"
 
+cz-git@^1.9.3:
+  version "1.9.3"
+  resolved "https://registry.npmjs.org/cz-git/-/cz-git-1.9.3.tgz"
+  integrity sha512-v7+vYOparImLLo6J5tAsi/cz+EAK7FI/TDnemi11xgEax4k+ZVqxsmkiEc68n+MJLp1l5THhB2KTDhjpW+ellg==
+
 data-urls@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/data-urls/-/data-urls-2.0.0.tgz"
