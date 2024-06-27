@@ -30,7 +30,7 @@
     "dist/*"
   ],
   "license": "GuoGuo",
-  "homepage": "https://mzlui.codeym.com/",
+  "homepage": "https://github.com/shixindea/shixindea.github.io",
   "bugs": {
     "url": "https://mzlui.codeym.com/",
     "email": "2914310412@qq.com"
@@ -43,7 +43,8 @@
     "preview": "vite preview",
     "guoguo-ui": "vite build",
     "test": "jest --runInBand",
-    "gitcz": "git-cz"
+    "gitcz": "git-cz",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.11",
@@ -80,6 +81,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@shixinde/guoguo-cz": "^0.0.2"
+    "@shixinde/guoguo-cz": "^0.0.2",
+    "gh-pages": "^6.1.1"
   }
 }
