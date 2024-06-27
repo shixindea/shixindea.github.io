@@ -1,6 +1,3 @@
-rm -rf dist/
-
-
 pnpm build:html
 
 git add .

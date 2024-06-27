@@ -19,7 +19,7 @@ import preview from '@/components/preview.vue'
 </div>
 <preview compName="tooltip" demoName="demo1"/>
 
-## 不同位置
+## 箭头不同位置
 
 ### 共有 12 个位置 _top_ | _top-start_ | _top-end_ | _bottom_ | _bottom-start_ | _bottom-end_ | _left_ | _left-start_ | _left-end_ | _right_ | _right-start_ | _right-end_
 

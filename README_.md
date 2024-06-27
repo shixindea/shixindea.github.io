@@ -11,7 +11,7 @@ npm publish
 
 ### 发布 gh-pages 到 github pages 分支
 
-pnpm build
+pnpm build:html
 
 git subtree push --prefix dist origin gh-pages
 
