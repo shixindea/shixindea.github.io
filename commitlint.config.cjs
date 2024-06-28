@@ -1,3 +1,6 @@
+
+console.log('11 ===>', 11);
+
 module.exports = {
   types: [
     {
@@ -73,7 +76,7 @@ module.exports = {
       name: "📝  others:          其他改动",
     },
   ],
-  scopes: ['Text组件', 'Tooltip组件'],
+  scopes: ["贡献指南", "更新日志", "安装使用", "Layout 布局", "Color 颜色", "Icon 图标", "Button 按钮", "Input 输入框", "Textarea 文本域", "Space 间距", "Text 文本", "Select 下拉框", "Dropdown 下拉菜单", "Radio 单选", "Checkbox 多选", "Switch 开关", "Optfile 文件选择", "badge 徽章", "Table 表格", "Pagination 分页", "Datepicker 日期组件", "Tree 树形控件", "Menu 菜单", "Tab 切换", "Progress 进度条", "Message 消息提示", "Confirm 消息确认", "Modal 弹窗", "Drawer 抽屉", "Tooltip 提示", "Loading 加载中", "Backtop 回到顶部", "Popover 弹窗框", "colorPicker 颜色选择器", "breadcrumb 面包屑", "divider 分割线"],
   allowCustomScopes: true,
   allowBreakingChanges: ["feat", "fix"],
 };
