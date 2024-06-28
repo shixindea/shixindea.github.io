@@ -5088,171 +5088,12 @@ var gSpace = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$1]
 gSpace.install = (app) => {
   app.component(gSpace.name, gSpace);
 };
-const globalColor = {
-  primary: "#0e80eb",
-  info: "rgba(0,0,0,0.45)",
-  gray: "rgba(0,0,0,0.45)",
-  success: "#09b63d",
-  warning: "#f57b29",
-  danger: "#ec3437",
-  boder: "#f0f0f0",
-  shadow: "0 2px 12px 0 rgba(0, 0, 0, 0.1)",
-  default: "rgba(0,0,0,0.85)"
-};
-const theColors = {
-  default: globalColor.default,
-  primary: globalColor.primary,
-  success: globalColor.success,
-  warning: globalColor.warning,
-  danger: globalColor.danger,
-  gray: globalColor.gray,
-  link: globalColor.primary
-};
-const theSizes = {
-  small: "12px",
-  default: "14px",
-  large: "16px",
-  5: "12px",
-  4: "14px",
-  3: "16px",
-  2: "18px",
-  1: "20px"
-};
-const _sfc_main$1 = {
-  name: "gText",
-  props: {
-    size: {
-      type: String,
-      default: "default"
-    },
-    type: {
-      type: String,
-      default: "default"
-    },
-    color: {
-      type: String,
-      default: ""
-    },
-    underline: {
-      type: Boolean,
-      default: false
-    },
-    delete: {
-      type: Boolean,
-      default: false
-    },
-    strong: {
-      type: Boolean,
-      default: false
-    },
-    link: {
-      type: Boolean,
-      default: false
-    },
-    disabled: {
-      type: Boolean,
-      default: false
-    },
-    cursor: {
-      type: Boolean,
-      default: false
-    },
-    noSelect: {
-      type: Boolean,
-      default: false
-    },
-    number: {
-      type: Boolean,
-      default: false
-    },
-    copyable: {
-      type: Boolean,
-      default: false
-    }
-  },
-  setup(props2) {
-    const theSlot = ref([]);
-    ref(true);
-    const $slot = useSlots();
-    const styles = computed(() => {
-      return __spreadValues({
-        "font-weight": props2.strong ? 700 : "",
-        color: props2.color != "" ? props2.color : props2.link ? "#0e80eb" : props2.disabled ? theColors["gray"] : theColors[props2.type],
-        "text-decoration": props2.delete ? "line-through" : props2.underline ? "underline" : "",
-        cursor: props2.cursor ? "pointer" : props2.disabled ? "not-allowed" : "",
-        "user-select": props2.disabled ? "none" : "",
-        "caret-color": props2.cursor || props2.noSelect ? "transparent" : "",
-        "font-size": theSizes[props2.size],
-        "font-family": props2.number ? "DIN-Medium" : ""
-      }, props2.style);
-    });
-    if ($slot["default"] == void 0) {
-      theSlot.value = [];
-    } else if (props2.copyable) {
-      const baseSlot = [
-        h("span", {
-          className: `g-text`,
-          style: styles.value
-        }, $slot.default())
-      ];
-      const copySlot = [
-        h("span", {
-          className: `m-icon-copy`,
-          style: {
-            color: "red",
-            cursor: "pointer",
-            "user-select": "none",
-            "padding-left": "5px"
-          },
-          onClick: () => {
-            navigator.clipboard.writeText($slot.default()[0].children).then(() => {
-              theSlot.value = [h("g-space", {}, [...baseSlot, ...successSlot])];
-              setTimeout(() => {
-                theSlot.value = [h("g-space", {}, [...baseSlot, ...copySlot])];
-              }, 3e3);
-            });
-          }
-        }, {})
-      ];
-      const successSlot = [
-        h("span", {
-          className: `m-icon-select`,
-          style: {
-            color: "red",
-            cursor: "pointer",
-            "padding-left": "5px"
-          }
-        }, {})
-      ];
-      theSlot.value = [h("g-space", {}, [...baseSlot, ...copySlot])];
-    } else {
-      theSlot.value = [
-        h("span", {
-          className: `g-text`,
-          style: styles.value
-        }, $slot.default())
-      ];
-    }
-    return () => theSlot.value;
-  }
-};
-const _hoisted_1$1 = {
-  class: "g-text",
-  ref: "textRef"
-};
-function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createElementBlock("div", _hoisted_1$1, null, 512);
-}
-var gText = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render]]);
-gText.install = (app) => {
-  app.component(gText.name, gText);
-};
 var index_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _hoisted_1 = ["aria-hidden"];
+const _hoisted_1$1 = ["aria-hidden"];
 const __default__ = {
   name: "gTooltip"
 };
-const _sfc_main = /* @__PURE__ */ Object.assign(__default__, {
+const _sfc_main$1 = /* @__PURE__ */ Object.assign(__default__, {
   props: {
     width: {
       type: [String, Number]
@@ -5345,7 +5186,7 @@ const _sfc_main = /* @__PURE__ */ Object.assign(__default__, {
                 style: normalizeStyle({ "border-top": __props.color ? `6px solid ${__props.color}` : "" })
               }, null, 4),
               renderSlot(_ctx.$slots, "content", {}, void 0, true)
-            ], 14, _hoisted_1), [
+            ], 14, _hoisted_1$1), [
               [vShow, !__props.disabled && visible.value]
             ])
           ]),
@@ -5354,19 +5195,220 @@ const _sfc_main = /* @__PURE__ */ Object.assign(__default__, {
         createElementVNode("div", {
           ref_key: "reference",
           ref: reference,
-          class: "reference-content",
-          onMousedown: _cache[0] || (_cache[0] = (...args) => _ctx.focusTriggerHandler && _ctx.focusTriggerHandler(...args)),
-          onMouseup: _cache[1] || (_cache[1] = (...args) => _ctx.blurTriggerHandler && _ctx.blurTriggerHandler(...args))
+          class: "reference-content"
         }, [
           renderSlot(_ctx.$slots, "default", {}, void 0, true)
-        ], 544)
+        ], 512)
       ], 32);
     };
   }
 });
-var gTooltip = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-0367b402"]]);
+var gTooltip = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-d0bb0e70"]]);
 gTooltip.install = (app) => {
   app.component(gTooltip.name, gTooltip);
+};
+const globalColor = {
+  primary: "#0e80eb",
+  info: "rgba(0,0,0,0.45)",
+  gray: "rgba(0,0,0,0.45)",
+  success: "#09b63d",
+  warning: "#f57b29",
+  danger: "#ec3437",
+  boder: "#f0f0f0",
+  shadow: "0 2px 12px 0 rgba(0, 0, 0, 0.1)",
+  default: "rgba(0,0,0,0.85)"
+};
+const theColors = {
+  default: globalColor.default,
+  primary: globalColor.primary,
+  success: globalColor.success,
+  warning: globalColor.warning,
+  danger: globalColor.danger,
+  gray: globalColor.gray,
+  link: globalColor.primary
+};
+const theSizes = {
+  small: "12px",
+  default: "14px",
+  large: "16px",
+  5: "12px",
+  4: "14px",
+  3: "16px",
+  2: "18px",
+  1: "20px"
+};
+const _sfc_main = {
+  name: "gText",
+  props: {
+    size: {
+      type: String,
+      default: "default"
+    },
+    type: {
+      type: String,
+      default: "default"
+    },
+    color: {
+      type: String,
+      default: ""
+    },
+    underline: {
+      type: Boolean,
+      default: false
+    },
+    delete: {
+      type: Boolean,
+      default: false
+    },
+    strong: {
+      type: Boolean,
+      default: false
+    },
+    link: {
+      type: Boolean,
+      default: false
+    },
+    disabled: {
+      type: Boolean,
+      default: false
+    },
+    cursor: {
+      type: Boolean,
+      default: false
+    },
+    noSelect: {
+      type: Boolean,
+      default: false
+    },
+    number: {
+      type: Boolean,
+      default: false
+    },
+    copyable: {
+      type: [Boolean, Object],
+      default: false
+    }
+  },
+  setup(props2) {
+    var _a;
+    const theSlot = ref([]);
+    ref(true);
+    const $slot = useSlots();
+    const styles = computed(() => {
+      return __spreadValues({
+        "font-weight": props2.strong ? 700 : "",
+        color: props2.color != "" ? props2.color : props2.link ? "#0e80eb" : props2.disabled ? theColors["gray"] : theColors[props2.type],
+        "text-decoration": props2.delete ? "line-through" : props2.underline ? "underline" : "",
+        cursor: props2.cursor ? "pointer" : props2.disabled ? "not-allowed" : "",
+        "user-select": props2.disabled ? "none" : "",
+        "caret-color": props2.cursor || props2.noSelect ? "transparent" : "",
+        "font-size": theSizes[props2.size],
+        "font-family": props2.number ? "DIN-Medium" : ""
+      }, props2.style);
+    });
+    if ($slot["default"] == void 0) {
+      theSlot.value = [];
+    } else if (props2.copyable) {
+      const baseSlot = [
+        h("span", {
+          className: `g-text`,
+          style: styles.value
+        }, $slot.default())
+      ];
+      const copySlotHideText = [
+        h("span", {
+          className: `m-icon-copy`,
+          style: {
+            color: "red",
+            cursor: "pointer",
+            "user-select": "none",
+            "padding-left": "5px"
+          },
+          onClick: () => {
+            navigator.clipboard.writeText($slot.default()[0].children).then(() => {
+              theSlot.value = [h("g-space", {}, [...baseSlot, ...successSlotHideText])];
+              setTimeout(() => {
+                theSlot.value = [h("g-space", {}, [...baseSlot, ...copySlotHideText])];
+              }, 3e3);
+            });
+          }
+        }, {})
+      ];
+      const successSlotHideText = [
+        h("span", {
+          className: `m-icon-select`,
+          style: {
+            color: "red",
+            cursor: "pointer",
+            "padding-left": "5px"
+          }
+        }, {})
+      ];
+      const copySlot = [
+        h(gTooltip, {}, {
+          default: () => [
+            h("span", {
+              className: `m-icon-copy`,
+              style: {
+                color: "red",
+                cursor: "pointer",
+                "user-select": "none",
+                padding: "0 5px"
+              },
+              onClick: () => {
+                navigator.clipboard.writeText($slot.default()[0].children).then(() => {
+                  theSlot.value = [h("g-space", {}, [...baseSlot, ...successSlot])];
+                  setTimeout(() => {
+                    theSlot.value = [h("g-space", {}, [...baseSlot, ...copySlot])];
+                  }, 3e3);
+                });
+              }
+            }, {})
+          ],
+          content: () => "\u590D\u5236"
+        })
+      ];
+      const successSlot = [
+        h(gTooltip, {}, {
+          default: () => [
+            h("span", {
+              className: `m-icon-select`,
+              style: {
+                color: "red",
+                cursor: "pointer",
+                padding: "0 5px"
+              }
+            }, {})
+          ],
+          content: () => "\u590D\u5236\u6210\u529F"
+        })
+      ];
+      if (typeof props2.copyable == "object") {
+        theSlot.value = [h("g-space", {}, ((_a = props2.copyable) == null ? void 0 : _a.tooltip) ? [...baseSlot, ...copySlot] : [...baseSlot, ...copySlotHideText])];
+      } else {
+        theSlot.value = [h("g-space", {}, [...baseSlot, ...copySlot])];
+      }
+    } else {
+      theSlot.value = [
+        h("span", {
+          className: `g-text`,
+          style: styles.value
+        }, $slot.default())
+      ];
+    }
+    return () => theSlot.value;
+  }
+};
+const _hoisted_1 = {
+  class: "g-text",
+  ref: "textRef"
+};
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createElementBlock("div", _hoisted_1, null, 512);
+}
+var gText = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render]]);
+gText.install = (app) => {
+  app.component(gText.name, gText);
 };
 const components = [
   mButton,
