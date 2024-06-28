@@ -1,3 +1,5 @@
+## 构建文档并自动部署
+
 pnpm build:html
 
 git add .
