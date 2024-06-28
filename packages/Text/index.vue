@@ -5,7 +5,7 @@
 </template>
 <script>
 import { h, useSlots, ref, computed } from 'vue'
-import Message from '/packages/message/index.js'
+import Tooltip from '/packages/Tooltip/index.js'
 import { theColors, theSizes } from './conf'
 
 export default {
@@ -56,7 +56,7 @@ export default {
       default: false
     },
     copyable: {
-      type: Boolean,
+      type: [Boolean, Object],
       default: false
     }
   },
@@ -91,7 +91,8 @@ export default {
           $slot.default()
         )
       ]
-      const copySlot = [
+
+      const copySlotHideText = [
         h(
           'span',
           {
@@ -105,9 +106,9 @@ export default {
 
             onClick: () => {
               navigator.clipboard.writeText($slot.default()[0].children).then(() => {
-                theSlot.value = [h('g-space', {}, [...baseSlot, ...successSlot])]
+                theSlot.value = [h('g-space', {}, [...baseSlot, ...successSlotHideText])]
                 setTimeout(() => {
-                  theSlot.value = [h('g-space', {}, [...baseSlot, ...copySlot])]
+                  theSlot.value = [h('g-space', {}, [...baseSlot, ...copySlotHideText])]
                 }, 3000)
               })
             }
@@ -115,7 +116,7 @@ export default {
           {}
         )
       ]
-      const successSlot = [
+      const successSlotHideText = [
         h(
           'span',
           {
@@ -130,7 +131,69 @@ export default {
         )
       ]
 
-      theSlot.value = [h('g-space', {}, [...baseSlot, ...copySlot])]
+      const copySlot = [
+        h(
+          Tooltip,
+          {},
+          {
+            default: () => [
+              h(
+                'span',
+                {
+                  className: `m-icon-copy`,
+                  style: {
+                    color: 'red',
+                    cursor: 'pointer',
+                    'user-select': 'none',
+                    padding: '0 5px'
+                  },
+
+                  onClick: () => {
+                    navigator.clipboard.writeText($slot.default()[0].children).then(() => {
+                      theSlot.value = [h('g-space', {}, [...baseSlot, ...successSlot])]
+                      setTimeout(() => {
+                        theSlot.value = [h('g-space', {}, [...baseSlot, ...copySlot])]
+                      }, 3000)
+                    })
+                  }
+                },
+                {}
+              )
+            ],
+            content: () => '复制'
+          }
+        )
+      ]
+
+      const successSlot = [
+        h(
+          Tooltip,
+          {},
+          {
+            default: () => [
+              h(
+                'span',
+                {
+                  className: `m-icon-select`,
+                  style: {
+                    color: 'red',
+                    cursor: 'pointer',
+                    padding: '0 5px'
+                  }
+                },
+                {}
+              )
+            ],
+            content: () => '复制成功'
+          }
+        )
+      ]
+
+      if (typeof props.copyable == 'object') {
+        theSlot.value = [h('g-space', {}, props.copyable?.tooltip ? [...baseSlot, ...copySlot] : [...baseSlot, ...copySlotHideText])]
+      } else {
+        theSlot.value = [h('g-space', {}, [...baseSlot, ...copySlot])]
+      }
     } else {
       theSlot.value = [
         h(

@@ -41,8 +41,8 @@ const state = reactive({
       },
       {
         attr: 'copyable',
-        type: 'Boolean',
-        red: '可复制内容，若有多个元素，则只复制第一个元素',
+        type: 'Boolean|Object',
+        red: '可复制内容，若有多个元素，则只复制第一个元素\n可传递对象设置是否显示tooltip提示 :copyable="{ tooltip: false }"',
         sel: 'true / false',
         def: 'false'
       },

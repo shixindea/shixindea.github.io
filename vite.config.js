@@ -22,7 +22,7 @@ export default defineConfig({
     },
     lib: {
       entry: "./packages/index.js",
-      name: "mzl-ui",
+      name: "Guoguo-ui",
     },
   },
   resolve: {

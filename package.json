@@ -1,7 +1,7 @@
 {
   "name": "@shixinde/guoguo-ui",
   "author": "YuanGuoGuo",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "private": false,
   "main": "./dist/guoguo-ui.umd.js",
   "module": "./dist/guoguo-ui.es.js",
@@ -30,9 +30,9 @@
     "dist/*"
   ],
   "license": "GuoGuo",
-  "homepage": "https://github.com/shixindea/shixindea.github.io",
+  "homepage": "https://shixindea.github.io/#/mzlui",
   "bugs": {
-    "url": "https://mzlui.codeym.com/",
+    "url": "https://shixindea.github.io/#/mzlui",
     "email": "2914310412@qq.com"
   },
   "scripts": {

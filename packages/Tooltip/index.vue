@@ -15,7 +15,8 @@
         <slot name="content"></slot>
       </div>
     </transition>
-    <div ref="reference" class="reference-content" @mousedown="focusTriggerHandler" @mouseup="blurTriggerHandler">
+    <!--  @mousedown="focusTriggerHandler" @mouseup="blurTriggerHandler" -->
+    <div ref="reference" class="reference-content">
       <slot></slot>
     </div>
   </div>
@@ -116,13 +117,16 @@ function handleAfterLeave() {
   position: relative;
 
   .tooltip-outbox {
-    min-width: 130px;
+    // min-width: 130px;
+    // width: fit-content;
     font-size: 12px;
     line-height: 1.2;
     word-wrap: break-word;
     position: absolute;
     z-index: 1001;
     border-radius: 4px;
+    display: inline-block;
+    white-space: nowrap;
 
     &-block {
       padding: 10px;
