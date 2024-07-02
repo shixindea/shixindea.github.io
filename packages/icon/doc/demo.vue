@@ -1,6 +1,7 @@
 <template>
 	<p class="titlep">所有图标</p>
 	<div class="">
+		<div class="iconfont m-icon-xitongguanli"></div>--
 		<m-input v-model="keywords" leftIcon="m-icon-search" placeholder="输入图标关键词进行搜索" @input="search"></m-input>
 	</div>
 	<div class="iconListBox">

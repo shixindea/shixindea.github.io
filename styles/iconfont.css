@@ -1,7 +1,17 @@
 @font-face {
-  font-family: "iconfont"; /* Project id  */
+  font-family: "iconfont";
+  /* Project id  */
   src: url("./iconfont.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "iconfont";
+  /* Project id 4607122 */
+  src: url('./iconfont_yxd.woff2?t=1719923368867') format('woff2'),
+    url('./iconfont_yxd.woff?t=1719923368867') format('woff'),
+    url('./iconfont_yxd.ttf?t=1719923368867') format('truetype');
+}
+
 [class*="m-icon"] {
   font-family: "iconfont" !important;
   font-size: 14px;
@@ -11,6 +21,47 @@
   float: none;
   display: inline-block;
 }
+
+/* iconfont_yxd里面的图标 icon  start */
+.m-icon-xitongguanli:before {
+  content: "\e60a";
+}
+
+.m-icon-xitongdaohang:before {
+  content: "\e63b";
+}
+
+.m-icon-xitongshezhi:before {
+  content: "\e632";
+}
+
+.m-icon-xitongxiaoxi:before {
+  content: "\e654";
+}
+
+.m-icon-xitonggongneng:before {
+  content: "\e780";
+}
+
+.m-icon-xitonggonggao:before {
+  content: "\e668";
+}
+
+.m-icon-yingxiao:before {
+  content: "\e60d";
+}
+
+.m-icon-xitong:before {
+  content: "\e63e";
+}
+
+.m-icon-xitong1:before {
+  content: "\e658";
+}
+
+/* iconfont_yxd里面的图标 icon  end */
+
+/* 以下为原项目图标 icon */
 .m-icon-shangchuan:before {
   content: "\e671";
 }
