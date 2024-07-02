@@ -1,7 +1,7 @@
 {
   "name": "@shixinde/guoguo-ui",
   "author": "YuanGuoGuo",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "private": false,
   "main": "./dist/guoguo-ui.umd.js",
   "module": "./dist/guoguo-ui.es.js",
