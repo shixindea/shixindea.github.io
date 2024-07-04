@@ -1,8 +1,8 @@
 
 # 更新日志
 ### v0.3.3
-- Tooltip组件
-- Text排版 增加对象传递 可设置是否显示tooltip提示 :copyable="{ tooltip: false }"
+- Icon组件
+- 增加部分扩展图标
 
 ### v0.3.2
 - Tooltip组件
