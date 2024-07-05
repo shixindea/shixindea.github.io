@@ -65,6 +65,11 @@ export default [
         path: '/mzlui/Space'
       },
       {
+        'title-cn': 'Flex 布局(纠结是否开发中...)',
+        'title-en': 'Flex',
+        path: '/mzlui/Flex'
+      },
+      {
         'title-cn': 'Text 文本',
         'title-en': 'Text',
         path: '/mzlui/Text'

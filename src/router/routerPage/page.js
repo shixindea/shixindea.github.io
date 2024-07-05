@@ -60,6 +60,11 @@ export default [
         component: () => import('/packages/Space/doc/doc.md')
       },
       {
+        path: 'Flex',
+        name: 'Flex 布局',
+        component: () => import('/packages/Flex/doc/doc.md')
+      },
+      {
         path: 'Text',
         name: 'Text 文本',
         component: () => import('/packages/Text/doc/doc.md')

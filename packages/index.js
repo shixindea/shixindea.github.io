@@ -34,6 +34,7 @@ import mDivider from './divider/index'
 import gSpace from "./Space/index";
 import gText from './Text/index'
 import gTooltip from './Tooltip/index'
+import gFlex from './Flex/index'
 //存在所有组件
 const components = [
   mButton,
@@ -58,15 +59,16 @@ const components = [
   mCollapseItem,
   mMenu,
   mTabs,
-  gSpace,
   mPopover,
   mProgress,
   mColorPicker,
   mBreadcrumb,
   mBadge,
   mDivider,
+  gSpace,
   gText,
-  gTooltip
+  gTooltip,
+  gFlex
 
 ];
 const install = (app) => {
@@ -117,14 +119,15 @@ export {
   mMenu,
   mTabs,
   mPopover,
-  gSpace,
   mProgress,
   mColorPicker,
   mBreadcrumb,
   mBadge,
   mDivider,
+  gSpace,
   gText,
-  gTooltip
+  gTooltip,
+  gFlex
 
 }
 export default mzlUi
