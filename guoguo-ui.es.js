@@ -31,7 +31,7 @@ var _export_sfc = (sfc, props2) => {
 const __default__$t = {
   name: "mButton"
 };
-const _sfc_main$D = /* @__PURE__ */ Object.assign(__default__$t, {
+const _sfc_main$E = /* @__PURE__ */ Object.assign(__default__$t, {
   props: {
     type: {
       type: String,
@@ -106,7 +106,7 @@ const _sfc_main$D = /* @__PURE__ */ Object.assign(__default__$t, {
     };
   }
 });
-var mButton = /* @__PURE__ */ _export_sfc(_sfc_main$D, [["__scopeId", "data-v-07af7873"]]);
+var mButton = /* @__PURE__ */ _export_sfc(_sfc_main$E, [["__scopeId", "data-v-07af7873"]]);
 mButton.install = (app) => {
   app.component(mButton.name, mButton);
 };
@@ -115,7 +115,7 @@ const _hoisted_1$x = ["type", "value", "disabled", "placeholder", "autofocus", "
 const __default__$s = {
   name: "mInput"
 };
-const _sfc_main$C = /* @__PURE__ */ Object.assign(__default__$s, {
+const _sfc_main$D = /* @__PURE__ */ Object.assign(__default__$s, {
   props: {
     modelValue: String | Number,
     disabled: Boolean,
@@ -252,7 +252,7 @@ const _sfc_main$C = /* @__PURE__ */ Object.assign(__default__$s, {
     };
   }
 });
-var mInput = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["__scopeId", "data-v-0bf6b33a"]]);
+var mInput = /* @__PURE__ */ _export_sfc(_sfc_main$D, [["__scopeId", "data-v-0bf6b33a"]]);
 mInput.install = (app) => {
   app.component(mInput.name, mInput);
 };
@@ -263,7 +263,7 @@ const _hoisted_3$f = { key: 1 };
 const __default__$r = {
   name: "mTable"
 };
-const _sfc_main$B = /* @__PURE__ */ Object.assign(__default__$r, {
+const _sfc_main$C = /* @__PURE__ */ Object.assign(__default__$r, {
   props: {
     options: {
       type: Object,
@@ -340,7 +340,7 @@ const _sfc_main$B = /* @__PURE__ */ Object.assign(__default__$r, {
     };
   }
 });
-var mTable = /* @__PURE__ */ _export_sfc(_sfc_main$B, [["__scopeId", "data-v-7a48af02"]]);
+var mTable = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["__scopeId", "data-v-7a48af02"]]);
 mTable.install = (app) => {
   app.component(mTable.name, mTable);
 };
@@ -359,7 +359,7 @@ const _hoisted_5$8 = {
 const __default__$q = {
   name: "mSelect"
 };
-const _sfc_main$A = /* @__PURE__ */ Object.assign(__default__$q, {
+const _sfc_main$B = /* @__PURE__ */ Object.assign(__default__$q, {
   props: {
     modelValue: String | Array,
     placeholder: String,
@@ -596,7 +596,7 @@ const _sfc_main$A = /* @__PURE__ */ Object.assign(__default__$q, {
     };
   }
 });
-var mSelect = /* @__PURE__ */ _export_sfc(_sfc_main$A, [["__scopeId", "data-v-997604f4"]]);
+var mSelect = /* @__PURE__ */ _export_sfc(_sfc_main$B, [["__scopeId", "data-v-997604f4"]]);
 mSelect.install = (app) => {
   app.component(mSelect.name, mSelect);
 };
@@ -613,7 +613,7 @@ const _hoisted_5$7 = ["onClick"];
 const __default__$p = {
   name: "mDropdown"
 };
-const _sfc_main$z = /* @__PURE__ */ Object.assign(__default__$p, {
+const _sfc_main$A = /* @__PURE__ */ Object.assign(__default__$p, {
   props: {
     title: String,
     trigger: {
@@ -703,7 +703,7 @@ const _sfc_main$z = /* @__PURE__ */ Object.assign(__default__$p, {
     };
   }
 });
-var mDropdown = /* @__PURE__ */ _export_sfc(_sfc_main$z, [["__scopeId", "data-v-63cf7d91"]]);
+var mDropdown = /* @__PURE__ */ _export_sfc(_sfc_main$A, [["__scopeId", "data-v-63cf7d91"]]);
 mDropdown.install = (app) => {
   app.component(mDropdown.name, mDropdown);
 };
@@ -712,7 +712,7 @@ const _hoisted_1$t = ["onClick"];
 const __default__$o = {
   name: "mRadio"
 };
-const _sfc_main$y = /* @__PURE__ */ Object.assign(__default__$o, {
+const _sfc_main$z = /* @__PURE__ */ Object.assign(__default__$o, {
   props: {
     modelValue: String | Number,
     size: {
@@ -776,7 +776,7 @@ const _sfc_main$y = /* @__PURE__ */ Object.assign(__default__$o, {
     };
   }
 });
-var mRadio = /* @__PURE__ */ _export_sfc(_sfc_main$y, [["__scopeId", "data-v-06eba1b9"]]);
+var mRadio = /* @__PURE__ */ _export_sfc(_sfc_main$z, [["__scopeId", "data-v-06eba1b9"]]);
 mRadio.install = (app) => {
   app.component(mRadio.name, mRadio);
 };
@@ -785,7 +785,7 @@ const _hoisted_1$s = ["onClick"];
 const __default__$n = {
   name: "mCheckbox"
 };
-const _sfc_main$x = /* @__PURE__ */ Object.assign(__default__$n, {
+const _sfc_main$y = /* @__PURE__ */ Object.assign(__default__$n, {
   props: {
     modelValue: {
       type: Array,
@@ -867,13 +867,13 @@ const _sfc_main$x = /* @__PURE__ */ Object.assign(__default__$n, {
     };
   }
 });
-var mCheckbox = /* @__PURE__ */ _export_sfc(_sfc_main$x, [["__scopeId", "data-v-fee6d9e4"]]);
+var mCheckbox = /* @__PURE__ */ _export_sfc(_sfc_main$y, [["__scopeId", "data-v-fee6d9e4"]]);
 mCheckbox.install = (app) => {
   app.component(mCheckbox.name, mCheckbox);
 };
 var index_vue_vue_type_style_index_0_scoped_true_lang$m = "";
 const _hoisted_1$r = { class: "text" };
-const _sfc_main$w = {
+const _sfc_main$x = {
   props: {
     text: {
       type: [String, Object],
@@ -954,7 +954,7 @@ const _sfc_main$w = {
     };
   }
 };
-var mMessage = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["__scopeId", "data-v-612bb88c"]]);
+var mMessage = /* @__PURE__ */ _export_sfc(_sfc_main$x, [["__scopeId", "data-v-612bb88c"]]);
 var Message = ({ text, type, timeout, icon, textColor, bgColor, customClass }) => {
   const div = typeof document !== "undefined" ? typeof document.createElement !== "undefined" ? document.createElement("div") : "" : "";
   div.setAttribute("class", "mzlui-meassage-container");
@@ -978,7 +978,7 @@ const _hoisted_1$q = { class: "mzl-wrapper" };
 const _hoisted_2$i = { class: "mzl-header" };
 const _hoisted_3$c = { class: "mzl-body" };
 const _hoisted_4$a = { class: "mzl-footer" };
-const _sfc_main$v = {
+const _sfc_main$w = {
   props: {
     title: {
       type: String,
@@ -1084,7 +1084,7 @@ const _sfc_main$v = {
     };
   }
 };
-var mConfirm = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["__scopeId", "data-v-31ad20f7"]]);
+var mConfirm = /* @__PURE__ */ _export_sfc(_sfc_main$w, [["__scopeId", "data-v-31ad20f7"]]);
 const divNode = createVNode("div", { class: "mzlui-confirm-container" });
 render(divNode, typeof document !== "undefined" ? document.body : "");
 const container = divNode.el;
@@ -1118,7 +1118,7 @@ const _hoisted_3$b = { class: "mzl-modal-content" };
 const __default__$m = {
   name: "mModal"
 };
-const _sfc_main$u = /* @__PURE__ */ Object.assign(__default__$m, {
+const _sfc_main$v = /* @__PURE__ */ Object.assign(__default__$m, {
   props: {
     title: {
       type: String,
@@ -1226,7 +1226,7 @@ const _sfc_main$u = /* @__PURE__ */ Object.assign(__default__$m, {
     };
   }
 });
-var mModal = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["__scopeId", "data-v-2d2a1c4d"]]);
+var mModal = /* @__PURE__ */ _export_sfc(_sfc_main$v, [["__scopeId", "data-v-2d2a1c4d"]]);
 mModal.install = (app) => {
   app.component(mModal.name, mModal);
 };
@@ -1245,7 +1245,7 @@ const _hoisted_5$6 = { key: 1 };
 const __default__$l = {
   name: "mDrawer"
 };
-const _sfc_main$t = /* @__PURE__ */ Object.assign(__default__$l, {
+const _sfc_main$u = /* @__PURE__ */ Object.assign(__default__$l, {
   props: {
     modelValue: Boolean,
     title: {
@@ -1414,7 +1414,7 @@ const _sfc_main$t = /* @__PURE__ */ Object.assign(__default__$l, {
     };
   }
 });
-var mDrawer = /* @__PURE__ */ _export_sfc(_sfc_main$t, [["__scopeId", "data-v-2c1c455e"]]);
+var mDrawer = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["__scopeId", "data-v-2c1c455e"]]);
 mDrawer.install = (app) => {
   app.component(mDrawer.name, mDrawer);
 };
@@ -1422,7 +1422,7 @@ var index_vue_vue_type_style_index_0_scoped_true_lang$i = "";
 var index_vue_vue_type_style_index_1_lang = "";
 const _hoisted_1$n = ["src"];
 const _hoisted_2$f = { key: 2 };
-const _sfc_main$s = {
+const _sfc_main$t = {
   props: {
     obj: Object
   },
@@ -1458,7 +1458,7 @@ const _sfc_main$s = {
     };
   }
 };
-var mLoading = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["__scopeId", "data-v-2568864a"]]);
+var mLoading = /* @__PURE__ */ _export_sfc(_sfc_main$t, [["__scopeId", "data-v-2568864a"]]);
 const obj = reactive({
   show: false,
   text: "\u52A0\u8F7D\u4E2D...",
@@ -1545,7 +1545,7 @@ var index_vue_vue_type_style_index_0_scoped_true_lang$h = "";
 const __default__$k = {
   name: "mSwitch"
 };
-const _sfc_main$r = /* @__PURE__ */ Object.assign(__default__$k, {
+const _sfc_main$s = /* @__PURE__ */ Object.assign(__default__$k, {
   props: {
     modelValue: Boolean,
     width: {
@@ -1637,7 +1637,7 @@ const _sfc_main$r = /* @__PURE__ */ Object.assign(__default__$k, {
     };
   }
 });
-var mSwitch = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["__scopeId", "data-v-64626ef6"]]);
+var mSwitch = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["__scopeId", "data-v-64626ef6"]]);
 mSwitch.install = (app) => {
   app.component(mSwitch.name, mSwitch);
 };
@@ -1651,7 +1651,7 @@ const _hoisted_4$8 = {
   key: 0,
   class: "mzl-tree-ul-box"
 };
-const _sfc_main$q = {
+const _sfc_main$r = {
   props: {
     items: {
       type: Object,
@@ -1926,11 +1926,11 @@ const _sfc_main$q = {
     };
   }
 };
-var treeItem = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["__scopeId", "data-v-51b342d9"]]);
+var treeItem = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["__scopeId", "data-v-51b342d9"]]);
 const __default__$j = {
   name: "mTree"
 };
-const _sfc_main$p = /* @__PURE__ */ Object.assign(__default__$j, {
+const _sfc_main$q = /* @__PURE__ */ Object.assign(__default__$j, {
   props: {
     options: {
       type: Object,
@@ -1985,8 +1985,8 @@ const _sfc_main$p = /* @__PURE__ */ Object.assign(__default__$j, {
     };
   }
 });
-_sfc_main$p.install = (app) => {
-  app.component(_sfc_main$p.name, _sfc_main$p);
+_sfc_main$q.install = (app) => {
+  app.component(_sfc_main$q.name, _sfc_main$q);
 };
 var index_vue_vue_type_style_index_0_scoped_true_lang$g = "";
 const _withScopeId$6 = (n) => (pushScopeId("data-v-7dd573b6"), n = n(), popScopeId(), n);
@@ -2007,7 +2007,7 @@ const _hoisted_11$3 = ["onClick"];
 const __default__$i = {
   name: "mOptfile"
 };
-const _sfc_main$o = /* @__PURE__ */ Object.assign(__default__$i, {
+const _sfc_main$p = /* @__PURE__ */ Object.assign(__default__$i, {
   props: {
     accept: String,
     multiple: Boolean,
@@ -2201,7 +2201,7 @@ const _sfc_main$o = /* @__PURE__ */ Object.assign(__default__$i, {
     };
   }
 });
-var mOptfile = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["__scopeId", "data-v-7dd573b6"]]);
+var mOptfile = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["__scopeId", "data-v-7dd573b6"]]);
 mOptfile.install = (app) => {
   app.component(mOptfile.name, mOptfile);
 };
@@ -2214,7 +2214,7 @@ const _hoisted_2$c = {
 const __default__$h = {
   name: "mTextarea"
 };
-const _sfc_main$n = /* @__PURE__ */ Object.assign(__default__$h, {
+const _sfc_main$o = /* @__PURE__ */ Object.assign(__default__$h, {
   props: {
     modelValue: String,
     customClass: String,
@@ -2287,12 +2287,12 @@ const _sfc_main$n = /* @__PURE__ */ Object.assign(__default__$h, {
     };
   }
 });
-var mTextarea = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["__scopeId", "data-v-055a31e2"]]);
+var mTextarea = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["__scopeId", "data-v-055a31e2"]]);
 mTextarea.install = (app) => {
   app.component(mTextarea.name, mTextarea);
 };
 var index_vue_vue_type_style_index_0_scoped_true_lang$e = "";
-const _sfc_main$m = {
+const _sfc_main$n = {
   name: "mRow"
 };
 const _hoisted_1$j = { class: "mzl-row-default" };
@@ -2301,7 +2301,7 @@ function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
     renderSlot(_ctx.$slots, "default", {}, void 0, true)
   ]);
 }
-var mRow = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["render", _sfc_render$3], ["__scopeId", "data-v-1d1ea6a4"]]);
+var mRow = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["render", _sfc_render$3], ["__scopeId", "data-v-1d1ea6a4"]]);
 mRow.install = (app) => {
   app.component(mRow.name, mRow);
 };
@@ -2310,7 +2310,7 @@ const _hoisted_1$i = { class: "mzl-col-default" };
 const __default__$g = {
   name: "mCol"
 };
-const _sfc_main$l = /* @__PURE__ */ Object.assign(__default__$g, {
+const _sfc_main$m = /* @__PURE__ */ Object.assign(__default__$g, {
   props: {
     span: {
       type: Number,
@@ -2333,7 +2333,7 @@ const _sfc_main$l = /* @__PURE__ */ Object.assign(__default__$g, {
     };
   }
 });
-var mCol = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["__scopeId", "data-v-cc55ad60"]]);
+var mCol = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["__scopeId", "data-v-cc55ad60"]]);
 mCol.install = (app) => {
   app.component(mCol.name, mCol);
 };
@@ -2364,7 +2364,7 @@ const _hoisted_12$1 = /* @__PURE__ */ _withScopeId$5(() => /* @__PURE__ */ creat
 const __default__$f = {
   name: "mPagination"
 };
-const _sfc_main$k = /* @__PURE__ */ Object.assign(__default__$f, {
+const _sfc_main$l = /* @__PURE__ */ Object.assign(__default__$f, {
   props: {
     total: Number,
     current: {
@@ -2565,7 +2565,7 @@ const _sfc_main$k = /* @__PURE__ */ Object.assign(__default__$f, {
     };
   }
 });
-var mPagination = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["__scopeId", "data-v-7333769d"]]);
+var mPagination = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["__scopeId", "data-v-7333769d"]]);
 mPagination.install = (app) => {
   app.component(mPagination.name, mPagination);
 };
@@ -2663,7 +2663,7 @@ const _hoisted_32 = ["onClick"];
 const __default__$e = {
   name: "mDate"
 };
-const _sfc_main$j = /* @__PURE__ */ Object.assign(__default__$e, {
+const _sfc_main$k = /* @__PURE__ */ Object.assign(__default__$e, {
   props: {
     modelValue: String | Number,
     size: {
@@ -3238,7 +3238,7 @@ const _sfc_main$j = /* @__PURE__ */ Object.assign(__default__$e, {
     };
   }
 });
-var mDate = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["__scopeId", "data-v-67ba6910"]]);
+var mDate = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["__scopeId", "data-v-67ba6910"]]);
 mDate.install = (app) => {
   app.component(mDate.name, mDate);
 };
@@ -3257,7 +3257,7 @@ const _hoisted_3$5 = [
 const __default__$d = {
   name: "mBacktop"
 };
-const _sfc_main$i = /* @__PURE__ */ Object.assign(__default__$d, {
+const _sfc_main$j = /* @__PURE__ */ Object.assign(__default__$d, {
   props: {
     target: {
       type: String,
@@ -3356,7 +3356,7 @@ const _sfc_main$i = /* @__PURE__ */ Object.assign(__default__$d, {
     };
   }
 });
-var mBacktop = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["__scopeId", "data-v-60b6acd7"]]);
+var mBacktop = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["__scopeId", "data-v-60b6acd7"]]);
 mBacktop.install = (app) => {
   app.component(mBacktop.name, mBacktop);
 };
@@ -3369,7 +3369,7 @@ const _hoisted_4$4 = { class: "mzl-slot-item-box" };
 const __default__$c = {
   name: "mCollapseItem"
 };
-const _sfc_main$h = /* @__PURE__ */ Object.assign(__default__$c, {
+const _sfc_main$i = /* @__PURE__ */ Object.assign(__default__$c, {
   props: {
     name: String
   },
@@ -3407,12 +3407,12 @@ const _sfc_main$h = /* @__PURE__ */ Object.assign(__default__$c, {
     };
   }
 });
-var mCollapseItem = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["__scopeId", "data-v-435f8e6a"]]);
+var mCollapseItem = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["__scopeId", "data-v-435f8e6a"]]);
 var index_vue_vue_type_style_index_0_scoped_true_lang$8 = "";
 const __default__$b = {
   name: "mCollapse"
 };
-const _sfc_main$g = /* @__PURE__ */ Object.assign(__default__$b, {
+const _sfc_main$h = /* @__PURE__ */ Object.assign(__default__$b, {
   setup(__props) {
     const collapseRef = ref(null);
     getCurrentInstance();
@@ -3429,7 +3429,7 @@ const _sfc_main$g = /* @__PURE__ */ Object.assign(__default__$b, {
     };
   }
 });
-var mCollapse = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["__scopeId", "data-v-09b98fe7"]]);
+var mCollapse = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["__scopeId", "data-v-09b98fe7"]]);
 mCollapse.install = (app) => {
   app.component(mCollapse.name, mCollapse);
 };
@@ -3439,7 +3439,7 @@ mCollapseItem.install = (app) => {
 var menuItem_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _hoisted_1$d = ["data-key"];
 const _hoisted_2$7 = { class: "mzl-menu-item-title-box" };
-const _sfc_main$f = {
+const _sfc_main$g = {
   props: {
     items: {
       type: Object,
@@ -3639,7 +3639,7 @@ const _sfc_main$f = {
     };
   }
 };
-var menuItem = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["__scopeId", "data-v-56fe8d04"]]);
+var menuItem = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["__scopeId", "data-v-56fe8d04"]]);
 var index_vue_vue_type_style_index_0_scoped_true_lang$7 = "";
 const _hoisted_1$c = { class: "mzl-menu-default-box" };
 const _hoisted_2$6 = {
@@ -3649,7 +3649,7 @@ const _hoisted_2$6 = {
 const __default__$a = {
   name: "mMenu"
 };
-const _sfc_main$e = /* @__PURE__ */ Object.assign(__default__$a, {
+const _sfc_main$f = /* @__PURE__ */ Object.assign(__default__$a, {
   props: {
     options: {
       type: Array,
@@ -3701,7 +3701,7 @@ const _sfc_main$e = /* @__PURE__ */ Object.assign(__default__$a, {
     };
   }
 });
-var mMenu = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["__scopeId", "data-v-1ca0e931"]]);
+var mMenu = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["__scopeId", "data-v-1ca0e931"]]);
 mMenu.install = (app) => {
   app.component(mMenu.name, mMenu);
 };
@@ -3722,7 +3722,7 @@ const _hoisted_6$1 = [
 const __default__$9 = {
   name: "mTabsNav"
 };
-const _sfc_main$d = /* @__PURE__ */ Object.assign(__default__$9, {
+const _sfc_main$e = /* @__PURE__ */ Object.assign(__default__$9, {
   props: {
     panes: {
       type: Array,
@@ -3955,14 +3955,14 @@ const _sfc_main$d = /* @__PURE__ */ Object.assign(__default__$9, {
     };
   }
 });
-var mTabsNav = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["__scopeId", "data-v-bf943a32"]]);
+var mTabsNav = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["__scopeId", "data-v-bf943a32"]]);
 var index_vue_vue_type_style_index_0_scoped_true_lang$6 = "";
 const _hoisted_1$a = { class: "tabs" };
 const _hoisted_2$4 = { class: "tabs-content" };
 const __default__$8 = {
   name: "mTabs"
 };
-const _sfc_main$c = /* @__PURE__ */ Object.assign(__default__$8, {
+const _sfc_main$d = /* @__PURE__ */ Object.assign(__default__$8, {
   props: {
     modelValue: {
       type: [String, Number],
@@ -4098,7 +4098,7 @@ const _sfc_main$c = /* @__PURE__ */ Object.assign(__default__$8, {
     };
   }
 });
-var mTabs = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["__scopeId", "data-v-6127cba8"]]);
+var mTabs = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["__scopeId", "data-v-6127cba8"]]);
 var pane_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _hoisted_1$9 = {
   key: 0,
@@ -4107,7 +4107,7 @@ const _hoisted_1$9 = {
 const __default__$7 = {
   name: "mTabPane"
 };
-const _sfc_main$b = /* @__PURE__ */ Object.assign(__default__$7, {
+const _sfc_main$c = /* @__PURE__ */ Object.assign(__default__$7, {
   props: {
     name: {
       type: String,
@@ -4162,7 +4162,7 @@ const _sfc_main$b = /* @__PURE__ */ Object.assign(__default__$7, {
     };
   }
 });
-var mTabPane = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["__scopeId", "data-v-33de5621"]]);
+var mTabPane = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["__scopeId", "data-v-33de5621"]]);
 mTabs.install = (app) => {
   app.component(mTabs.name, mTabs);
   app.component(mTabPane.name, mTabPane);
@@ -4173,7 +4173,7 @@ const _hoisted_2$3 = ["textContent"];
 const __default__$6 = {
   name: "mPopover"
 };
-const _sfc_main$a = /* @__PURE__ */ Object.assign(__default__$6, {
+const _sfc_main$b = /* @__PURE__ */ Object.assign(__default__$6, {
   props: {
     width: {
       type: [String, Number]
@@ -4339,7 +4339,7 @@ const _sfc_main$a = /* @__PURE__ */ Object.assign(__default__$6, {
     };
   }
 });
-var mPopover = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["__scopeId", "data-v-2e7c35a3"]]);
+var mPopover = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["__scopeId", "data-v-2e7c35a3"]]);
 mPopover.install = (app) => {
   app.component(mPopover.name, mPopover);
 };
@@ -4355,7 +4355,7 @@ const _hoisted_5$1 = ["stroke", "stroke-dasharray", "stroke-dashoffset"];
 const __default__$5 = {
   name: "mProgress"
 };
-const _sfc_main$9 = /* @__PURE__ */ Object.assign(__default__$5, {
+const _sfc_main$a = /* @__PURE__ */ Object.assign(__default__$5, {
   props: {
     percent: {
       type: Number,
@@ -4614,7 +4614,7 @@ const _sfc_main$9 = /* @__PURE__ */ Object.assign(__default__$5, {
     };
   }
 });
-var mProgress = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["__scopeId", "data-v-2b0f9c05"]]);
+var mProgress = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["__scopeId", "data-v-2b0f9c05"]]);
 mProgress.install = (app) => {
   app.component(mProgress.name, mProgress);
 };
@@ -4634,7 +4634,7 @@ const _hoisted_11 = ["onMouseenter", "onClick"];
 const __default__$4 = {
   name: "mColorPicker"
 };
-const _sfc_main$8 = /* @__PURE__ */ Object.assign(__default__$4, {
+const _sfc_main$9 = /* @__PURE__ */ Object.assign(__default__$4, {
   props: {
     modelValue: {
       type: String
@@ -4856,7 +4856,7 @@ const _sfc_main$8 = /* @__PURE__ */ Object.assign(__default__$4, {
     };
   }
 });
-var mColorPicker = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-4730ac18"]]);
+var mColorPicker = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["__scopeId", "data-v-4730ac18"]]);
 mColorPicker.install = (app) => {
   app.component(mColorPicker.name, mColorPicker);
 };
@@ -4872,7 +4872,7 @@ const props = {
     default: 5
   }
 };
-const _sfc_main$7 = {
+const _sfc_main$8 = {
   name: "mBreadcrumb",
   props,
   render(props2) {
@@ -4896,7 +4896,7 @@ const _sfc_main$7 = {
 const __default__$3 = {
   name: "mBreadcrumbItem"
 };
-const _sfc_main$6 = /* @__PURE__ */ Object.assign(__default__$3, {
+const _sfc_main$7 = /* @__PURE__ */ Object.assign(__default__$3, {
   props: {
     customClass: String
   },
@@ -4910,9 +4910,9 @@ const _sfc_main$6 = /* @__PURE__ */ Object.assign(__default__$3, {
     };
   }
 });
-_sfc_main$7.install = (app) => {
+_sfc_main$8.install = (app) => {
+  app.component(_sfc_main$8.name, _sfc_main$8);
   app.component(_sfc_main$7.name, _sfc_main$7);
-  app.component(_sfc_main$6.name, _sfc_main$6);
 };
 var index_vue_vue_type_style_index_0_scoped_true_lang$2 = "";
 const _hoisted_1$5 = { class: "mzl-badge" };
@@ -4925,7 +4925,7 @@ const _hoisted_4 = {
 const __default__$2 = {
   name: "mBadge"
 };
-const _sfc_main$5 = /* @__PURE__ */ Object.assign(__default__$2, {
+const _sfc_main$6 = /* @__PURE__ */ Object.assign(__default__$2, {
   props: {
     value: String | Number,
     hidden: {
@@ -4963,7 +4963,7 @@ const _sfc_main$5 = /* @__PURE__ */ Object.assign(__default__$2, {
     };
   }
 });
-var mBadge = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-a26a34c4"]]);
+var mBadge = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-a26a34c4"]]);
 mBadge.install = (app) => {
   app.component(mBadge.name, mBadge);
 };
@@ -4975,7 +4975,7 @@ const _hoisted_1$4 = {
 const __default__$1 = {
   name: "mDivider"
 };
-const _sfc_main$4 = /* @__PURE__ */ Object.assign(__default__$1, {
+const _sfc_main$5 = /* @__PURE__ */ Object.assign(__default__$1, {
   props: {
     position: {
       type: String,
@@ -5003,11 +5003,11 @@ const _sfc_main$4 = /* @__PURE__ */ Object.assign(__default__$1, {
     };
   }
 });
-var mDivider = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-6c7d38c2"]]);
+var mDivider = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-6c7d38c2"]]);
 mDivider.install = (app) => {
   app.component(mDivider.name, mDivider);
 };
-const _sfc_main$3 = {
+const _sfc_main$4 = {
   name: "gSpace",
   props: {
     inline: {
@@ -5087,7 +5087,7 @@ const _hoisted_1$3 = {
 function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", _hoisted_1$3, null, 512);
 }
-var gSpace = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$2]]);
+var gSpace = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render$2]]);
 gSpace.install = (app) => {
   app.component(gSpace.name, gSpace);
 };
@@ -5096,7 +5096,7 @@ const _hoisted_1$2 = ["aria-hidden"];
 const __default__ = {
   name: "gTooltip"
 };
-const _sfc_main$2 = /* @__PURE__ */ Object.assign(__default__, {
+const _sfc_main$3 = /* @__PURE__ */ Object.assign(__default__, {
   props: {
     width: {
       type: [String, Number]
@@ -5206,7 +5206,7 @@ const _sfc_main$2 = /* @__PURE__ */ Object.assign(__default__, {
     };
   }
 });
-var gTooltip = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-d0bb0e70"]]);
+var gTooltip = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-d0bb0e70"]]);
 gTooltip.install = (app) => {
   app.component(gTooltip.name, gTooltip);
 };
@@ -5240,7 +5240,7 @@ const theSizes = {
   2: "18px",
   1: "20px"
 };
-const _sfc_main$1 = {
+const _sfc_main$2 = {
   name: "gText",
   props: {
     size: {
@@ -5409,11 +5409,11 @@ const _hoisted_1$1 = {
 function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", _hoisted_1$1, null, 512);
 }
-var gText = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render$1]]);
+var gText = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$1]]);
 gText.install = (app) => {
   app.component(gText.name, gText);
 };
-const _sfc_main = {
+const _sfc_main$1 = {
   name: "gFlex",
   props: {
     inline: {
@@ -5495,9 +5495,96 @@ const _hoisted_1 = {
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", _hoisted_1, null, 512);
 }
-var gFlex = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render]]);
+var gFlex = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render]]);
 gFlex.install = (app) => {
   app.component(gFlex.name, gFlex);
+};
+function mitt(n) {
+  return { all: n = n || /* @__PURE__ */ new Map(), on: function(t, e) {
+    var i = n.get(t);
+    i && i.push(e) || n.set(t, [e]);
+  }, off: function(t, e) {
+    var i = n.get(t);
+    i && i.splice(i.indexOf(e) >>> 0, 1);
+  }, emit: function(t, e) {
+    (n.get(t) || []).slice().map(function(n2) {
+      n2(e);
+    }), (n.get("*") || []).slice().map(function(n2) {
+      n2(t, e);
+    });
+  } };
+}
+const eventBus = mitt();
+const defaultOptions = {
+  global: true,
+  inject: true,
+  globalPropertyName: "$eventBus",
+  injectName: "$eventBus"
+};
+eventBus.install = install$1;
+function install$1(app, options) {
+  let opt = __spreadValues(__spreadValues({}, defaultOptions), options);
+  if (opt.global) {
+    app.config.globalProperties[opt.globalPropertyName] = eventBus;
+  }
+  if (opt.inject) {
+    app.provide(opt.injectName, eventBus);
+  }
+  return eventBus;
+}
+const _sfc_main = /* @__PURE__ */ defineComponent({
+  props: {
+    model: { type: Object },
+    rules: { type: Object }
+  },
+  setup(__props, { expose }) {
+    const theProps = __props;
+    const fields = ref([]);
+    provide("form", theProps);
+    const resetFields = () => {
+      fields.value.forEach((field) => field.resetField());
+    };
+    const validate = (cb) => {
+      console.log("form- ---theProps ===>", theProps);
+      return new Promise((resolve) => {
+        let valid = true, count = 0;
+        fields.value.forEach((field) => {
+          field.validate("", (error) => {
+            console.log("form-error ===>", error);
+            if (error)
+              valid = false;
+            if (++count === fields.value.length) {
+              resolve(valid);
+              if (typeof cb === "function")
+                cb(valid);
+            }
+          });
+        });
+      });
+    };
+    onMounted(() => {
+      eventBus.on("form-add", (field) => {
+        if (field)
+          fields.value.push(field);
+      });
+      eventBus.on("form-remove", (field) => {
+        if (field.prop)
+          fields.value.splice(fields.value.indexOf(field), 1);
+      });
+    });
+    expose({
+      resetFields,
+      validate
+    });
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("div", null, [
+        renderSlot(_ctx.$slots, "default")
+      ]);
+    };
+  }
+});
+_sfc_main.install = (app) => {
+  app.component(_sfc_main.name, _sfc_main);
 };
 const components = [
   mButton,
@@ -5510,7 +5597,7 @@ const components = [
   mModal,
   mDrawer,
   mSwitch,
-  _sfc_main$p,
+  _sfc_main$q,
   mOptfile,
   mTextarea,
   mRow,
@@ -5525,13 +5612,14 @@ const components = [
   mPopover,
   mProgress,
   mColorPicker,
-  _sfc_main$7,
+  _sfc_main$8,
   mBadge,
   mDivider,
   gSpace,
   gText,
   gTooltip,
-  gFlex
+  gFlex,
+  _sfc_main
 ];
 const install = (app) => {
   components.forEach((i) => {
@@ -5549,4 +5637,4 @@ const mzlUi = {
 if (typeof window !== "undefined" && window.Vue) {
   install(window.Vue);
 }
-export { $mzl, Confirm, Loading, Message, mzlUi as default, gFlex, gSpace, gText, gTooltip, install, mBacktop, mBadge, _sfc_main$7 as mBreadcrumb, mButton, mCheckbox, mCol, mCollapse, mCollapseItem, mColorPicker, mDate, mDivider, mDrawer, mDropdown, mInput, mMenu, mModal, mOptfile, mPagination, mPopover, mProgress, mRadio, mRow, mSelect, mSwitch, mTable, mTabs, mTextarea, _sfc_main$p as mTree };
+export { $mzl, Confirm, Loading, Message, mzlUi as default, gFlex, _sfc_main as gFrom, gSpace, gText, gTooltip, install, mBacktop, mBadge, _sfc_main$8 as mBreadcrumb, mButton, mCheckbox, mCol, mCollapse, mCollapseItem, mColorPicker, mDate, mDivider, mDrawer, mDropdown, mInput, mMenu, mModal, mOptfile, mPagination, mPopover, mProgress, mRadio, mRow, mSelect, mSwitch, mTable, mTabs, mTextarea, _sfc_main$q as mTree };
