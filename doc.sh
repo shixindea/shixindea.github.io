@@ -2,6 +2,8 @@
 
 pnpm build:html
 
+mkdir ./docs/packages
+
 scp -r ./packages/* ./docs/packages/
 
 git add .
