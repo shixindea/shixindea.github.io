@@ -35,6 +35,8 @@ import gSpace from "./Space/index";
 import gText from './Text/index'
 import gTooltip from './Tooltip/index'
 import gFlex from './Flex/index'
+import gFrom from './Form/index'
+
 //存在所有组件
 const components = [
   mButton,
@@ -68,7 +70,8 @@ const components = [
   gSpace,
   gText,
   gTooltip,
-  gFlex
+  gFlex,
+  gFrom
 
 ];
 const install = (app) => {
@@ -127,7 +130,8 @@ export {
   gSpace,
   gText,
   gTooltip,
-  gFlex
+  gFlex,
+  gFrom
 
 }
 export default mzlUi

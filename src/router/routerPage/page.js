@@ -103,6 +103,10 @@ export default [
         path: 'badge',
         name: 'badge 徽章',
         component: () => import('/packages/badge/doc/doc.md')
+      }, {
+        path: 'form',
+        name: 'Form 表单',
+        component: () => import('/packages/form/doc/doc.md')
       },
       {
         path: 'table',

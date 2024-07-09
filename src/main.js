@@ -8,7 +8,9 @@ import hljs from "highlight.js";
 import router from "@/router";
 // import mzlUI from '../dist/mzl-ui.es'
 // import '../dist/style.css'
+import eventBus from 'vue3-eventbus'  //事件总线
 const app = createApp(App);
+app.use(eventBus)
 app.use(mzlUI);
 app.use(router);
 app.use(createPinia());

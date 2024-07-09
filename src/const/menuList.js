@@ -112,6 +112,7 @@ export default [
     'title-en': 'Data',
     list: [
       { 'title-cn': 'Badge 徽章', 'title-en': 'Badge', path: '/mzlui/badge' },
+      { 'title-cn': 'form 表单', 'title-en': 'Form', path: '/mzlui/form' },
       { 'title-cn': 'Table 表格', 'title-en': 'Table', path: '/mzlui/table' },
       {
         'title-cn': 'Pagination 分页',
