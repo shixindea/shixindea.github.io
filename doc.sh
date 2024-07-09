@@ -1,6 +1,8 @@
 ## 构建文档并自动部署
 
-# pnpm build:html
+pnpm build:html
+
+scp -r ./packages/* ./docs/
 
 git add .
 
