@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import pagesRouter from "./routerPage/page.js";
-// console.log('pagesRouter ===>', JSON.stringify(pagesRouter[1].children.map(res => res.name)));
+console.log('pagesRouter ===>', JSON.stringify(pagesRouter[1].children.map(res => res.name)));
 
 const router = createRouter({
   history: createWebHashHistory(),
