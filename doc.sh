@@ -2,7 +2,7 @@
 
 pnpm build:html
 
-scp -r ./packages/* ./docs/
+scp -r ./packages/* ./docs/packages/
 
 git add .
 
